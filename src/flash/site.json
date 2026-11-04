@@ -1,0 +1,950 @@
+{
+  "name": "Crowned Women and Family Community Services",
+  "lang": "English",
+  "ui": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact Us",
+    "our_services": "Our Services",
+    "learn_more": "Learn More",
+    "form_success": "Thank you for reaching out. We'll be in touch soon.",
+    "form_error": "Something went wrong. Please try again.",
+    "done_message": "Your website has been created with care. We'd love to hear any changes you'd like to make, just describe them to us.",
+    "skip_to_content": "Skip to Main Content",
+    "menu": "Menu",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "formUrl": "https://readdy.ai/api/form/dbl8spp3ild7mhsptj9g",
+  "theme": {
+    "accent": "violet",
+    "mode": "light",
+    "style": "warm"
+  },
+  "nap": {
+    "name": "Crowned Women and Family Community Services",
+    "address": "Mississauga, Ontario",
+    "phone": "(905) 555-0142",
+    "generated": {
+      "phone": "d3f9d41d"
+    }
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "path": "/",
+      "title": "Crowned Women \u0026 Family Community Services",
+      "description": "Culturally responsive counseling, mentorship and leadership programs for women, girls and families in Mississauga.",
+      "types": [
+        "navbar",
+        "hero",
+        "logos",
+        "contact",
+        "stats",
+        "features",
+        "showcase",
+        "products",
+        "cases",
+        "schedule",
+        "textblock",
+        "team",
+        "testimonials",
+        "faq",
+        "areas",
+        "newsletter",
+        "cta",
+        "footer",
+        "stickybar"
+      ],
+      "sections": {
+        "areas": {
+          "items": [
+            "Mississauga",
+            "Brampton",
+            "Malton",
+            "Meadowvale",
+            "Streetsville",
+            "Port Credit",
+            "Etobicoke",
+            "Milton"
+          ],
+          "note": "Programs and referrals are available to families across Peel Region and nearby communities.",
+          "subtitle": "Supporting women and families across Mississauga and the surrounding region",
+          "title": "Communities We Serve"
+        },
+        "cases": {
+          "items": [
+            {
+              "metric": "48",
+              "metricLabel": "Women trained for boards",
+              "summary": "A graduate of our Board \u0026 Civic Readiness training stepped into a school council seat and now mentors other women.",
+              "tag": "Leadership",
+              "title": "From Participant to Board Member"
+            },
+            {
+              "metric": "1,450",
+              "metricLabel": "People served annually",
+              "summary": "Newcomer support connected a mother of two to local services, skills training and a first Canadian job.",
+              "tag": "Economic Opportunity",
+              "title": "A Newcomer's New Beginning"
+            }
+          ],
+          "subtitle": "Real change for women, girls and families across Mississauga.",
+          "title": "Our Impact in the Community"
+        },
+        "contact": {
+          "fields": [
+            {
+              "label": "Full name",
+              "placeholder": "Your name",
+              "type": "text"
+            },
+            {
+              "label": "Email",
+              "placeholder": "you@example.com",
+              "type": "email"
+            },
+            {
+              "label": "Phone",
+              "placeholder": "(905) 555-0142",
+              "type": "tel"
+            },
+            {
+              "label": "I'm interested in",
+              "options": [
+                "Family Counseling",
+                "Youth Mentorship",
+                "Newcomer Support",
+                "SHINE HER LIGHT",
+                "Board \u0026 Civic Readiness",
+                "Volunteering"
+              ],
+              "placeholder": "Choose a program",
+              "type": "select"
+            },
+            {
+              "label": "How can we support you?",
+              "placeholder": "Share what you need or how you'd like to help",
+              "type": "textarea"
+            }
+          ],
+          "note": "Your information stays private. We respond within two business days.",
+          "phone": "(905) 555-0142",
+          "submit": "Submit Request",
+          "subtitle": "Tell us a little about yourself and our team will follow up with programs, referrals and next steps.",
+          "title": "Request Support or Get Involved"
+        },
+        "cta": {
+          "button": "Get Involved",
+          "subtitle": "Support our mission or join a program today. Together, we help every woman shine her light.",
+          "title": "Empowering Women. Strengthening Families. Building Community."
+        },
+        "faq": {
+          "items": [
+            {
+              "answer": "Women, girls, youth, newcomers, and families across Mississauga and the surrounding region are welcome. Support is culturally responsive and open to all.",
+              "question": "Who can access your services?"
+            },
+            {
+              "answer": "Most community programs, mentorship, and newcomer supports are offered at no cost. Our team will explain any fees during your intake conversation.",
+              "question": "Is there a cost to join your programs?"
+            },
+            {
+              "answer": "Submit an intake or interest form online or call us. We will follow up to explore available support, eligibility, and next steps.",
+              "question": "How do I request counseling or mentorship?"
+            },
+            {
+              "answer": "We offer settlement guidance, referrals to local services, community connections, and skills development for women and families.",
+              "question": "How are newcomers supported?"
+            },
+            {
+              "answer": "Yes. Volunteers and community partners help us open doors to boards, schools, and careers. Reach out through our contact form to get started.",
+              "question": "Can I volunteer or partner with you?"
+            }
+          ],
+          "title": "Frequently Asked Questions"
+        },
+        "features": {
+          "items": [
+            {
+              "description": "Culturally responsive counseling for women, youth, couples and families navigating stress, relationships, emotional well-being and life transitions.",
+              "icon": "👑",
+              "title": "Family Counseling"
+            },
+            {
+              "description": "Structured mentorship helping girls and youth build confidence, leadership, goal setting and positive community connections.",
+              "icon": "🌱",
+              "title": "Youth Mentorship"
+            },
+            {
+              "description": "Settlement guidance, referrals and community connections for newcomers adapting to life in Mississauga.",
+              "icon": "🌍",
+              "title": "Newcomer Support"
+            },
+            {
+              "description": "Celebrating the voices, heritage and excellence of Black women and girls through inspiration and sisterhood.",
+              "icon": "✨",
+              "title": "SHINE HER LIGHT"
+            },
+            {
+              "description": "Quarterly training preparing women to serve on boards, school councils and community committees.",
+              "icon": "🏛️",
+              "title": "Board \u0026 Civic Readiness"
+            },
+            {
+              "description": "Intensive training equipping women, with a focus on Black women and newcomers, to lead in top sectors.",
+              "icon": "💼",
+              "title": "CGIRLS Empowerment"
+            }
+          ],
+          "layout": "bento",
+          "subtitle": "Culturally responsive programs rooted in dignity, community and care.",
+          "title": "Our Services"
+        },
+        "footer": {
+          "areas": [
+            "Mississauga",
+            "Brampton",
+            "Malton",
+            "Meadowvale",
+            "Streetsville",
+            "Port Credit"
+          ],
+          "brand": "Crowned Women and Family Community Services",
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/about",
+              "label": "About"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact Us"
+            }
+          ],
+          "tagline": "Empowering women, strengthening families, and building community in Mississauga."
+        },
+        "hero": {
+          "eyebrow": "Serving Mississauga and the surrounding region",
+          "primaryCta": "Request Support",
+          "secondaryCta": "Get Involved",
+          "subtitle": "We uplift the dignity, purpose and leadership of women and girls through mentorship, culturally responsive counseling and community advocacy.",
+          "title": "Empowering Women. Strengthening Families."
+        },
+        "logos": {
+          "items": [
+            "Peel District School Board",
+            "Newcomer families",
+            "Black women and girls",
+            "Youth and mentors",
+            "Local community partners"
+          ],
+          "title": "Working alongside"
+        },
+        "navbar": {
+          "brand": "Crowned Women \u0026 Family",
+          "cta": "Get Support",
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/about",
+              "label": "About"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact Us"
+            }
+          ]
+        },
+        "newsletter": {
+          "button": "Subscribe",
+          "note": "We respect your privacy. Unsubscribe at any time.",
+          "placeholder": "you@example.com",
+          "subtitle": "Program news, events, and ways to get involved, straight to your inbox.",
+          "title": "Stay Connected"
+        },
+        "products": {
+          "items": [
+            {
+              "cta": "Request intake",
+              "description": "Confidential, culturally responsive counseling with community referrals when needed.",
+              "icon": "🫶",
+              "name": "Family Counseling",
+              "tag": "Most requested"
+            },
+            {
+              "cta": "Submit interest",
+              "description": "Mentor matching, life skills and leadership for girls and youth.",
+              "icon": "🌟",
+              "name": "Youth Mentorship"
+            },
+            {
+              "cta": "Request intake",
+              "description": "Settlement guidance, referrals and skills development for newcomers.",
+              "icon": "🌍",
+              "name": "Newcomer Support"
+            },
+            {
+              "cta": "Join us",
+              "description": "An annual gathering celebrating Black women and girls through culture, faith and sisterhood.",
+              "icon": "🕯️",
+              "name": "SHINE HER LIGHT",
+              "tag": "Community favourite"
+            },
+            {
+              "cta": "Learn More",
+              "description": "Quarterly training for boards, school councils and community committees.",
+              "icon": "🏛️",
+              "name": "Board \u0026 Civic Readiness"
+            },
+            {
+              "cta": "Learn More",
+              "description": "Intensive training to enter, advance and lead in Canada's top professional sectors.",
+              "icon": "💼",
+              "name": "CGIRLS Empowerment",
+              "tag": "New"
+            }
+          ],
+          "subtitle": "Explore the programs where women and families find support and strength.",
+          "title": "Programs at a Glance"
+        },
+        "schedule": {
+          "items": [
+            {
+              "day": "Monday",
+              "name": "Family Counseling Intakes",
+              "note": "By appointment",
+              "time": "10:00 – 12:00"
+            },
+            {
+              "day": "Tuesday",
+              "name": "Youth Mentorship Circle",
+              "note": "Ages 12–18",
+              "time": "5:30 – 7:00"
+            },
+            {
+              "day": "Wednesday",
+              "name": "Newcomer Support Drop-In",
+              "note": "Walk-ins welcome",
+              "time": "10:00 – 11:30"
+            },
+            {
+              "day": "Thursday",
+              "name": "CGIRLS Empowerment Session",
+              "note": "Registered participants",
+              "time": "6:00 – 8:00"
+            },
+            {
+              "day": "Friday",
+              "name": "Sisterhood Social",
+              "note": "All women welcome",
+              "time": "5:00 – 7:00"
+            },
+            {
+              "day": "Saturday",
+              "name": "Board \u0026 Civic Readiness",
+              "note": "Quarterly cohort",
+              "time": "11:00 – 1:00"
+            }
+          ],
+          "subtitle": "Drop in, connect and grow with us at our Mississauga location.",
+          "title": "Weekly Program Schedule"
+        },
+        "showcase": {
+          "items": [
+            {
+              "description": "A safe, respectful space where women, youth and families feel seen, valued and understood.",
+              "icon": "💗",
+              "points": [
+                "Safe and respectful space",
+                "Referrals to local services",
+                "Support for every life stage"
+              ],
+              "title": "Culturally Responsive Care"
+            },
+            {
+              "description": "We prepare women to claim their place in boardrooms, schools and careers.",
+              "icon": "🚀",
+              "points": [
+                "Board and civic readiness",
+                "Skills and career development",
+                "Mentorship that opens doors"
+              ],
+              "title": "Leadership and Economic Opportunity"
+            },
+            {
+              "description": "Together with local partners, we open doors to boards, schools and careers for women and youth.",
+              "icon": "🤝",
+              "points": [
+                "School board partnerships",
+                "Local service referrals",
+                "Stronger family networks"
+              ],
+              "title": "Community Partnerships"
+            }
+          ],
+          "subtitle": "Our work is grounded in dignity, cultural responsiveness and real opportunity.",
+          "title": "Where Women Rise, Communities Thrive"
+        },
+        "stats": {
+          "items": [
+            {
+              "label": "Years of service",
+              "value": "3+"
+            },
+            {
+              "label": "People served annually",
+              "value": "1,450"
+            },
+            {
+              "label": "Dignity focused",
+              "value": "100%"
+            },
+            {
+              "label": "Core programs",
+              "value": "6"
+            }
+          ]
+        },
+        "stickybar": {
+          "button": "Get Involved",
+          "phone": "(905) 555-0142"
+        },
+        "team": {
+          "items": [
+            {
+              "bio": "Leads with a vision of dignity, purpose, and leadership for every woman and girl.",
+              "name": "Sarah Jenkins",
+              "role": "Founder \u0026 Executive Director"
+            },
+            {
+              "bio": "Designs mentorship and newcomer programs that meet families where they are.",
+              "name": "Elena Rodriguez",
+              "role": "Program Director"
+            },
+            {
+              "bio": "Connects women and families to partners, resources, and lasting community ties.",
+              "name": "Marcia Chen",
+              "role": "Community Advocate"
+            }
+          ],
+          "subtitle": "The women guiding our mission in Mississauga",
+          "title": "Our Leadership Team"
+        },
+        "testimonials": {
+          "items": [
+            {
+              "name": "Sarah M.",
+              "quote": "The leadership training at Crowned Women gave me the tools to start my own business and lead with confidence.",
+              "role": "Founder"
+            },
+            {
+              "name": "Maya L.",
+              "quote": "As a newcomer, I felt so welcomed and supported. This community is truly a second home for many families.",
+              "role": "Family Member"
+            },
+            {
+              "name": "Elena R.",
+              "quote": "The mentorship program changed my life. I finally found a path forward and a community that believes in me.",
+              "role": "Youth Mentor"
+            }
+          ],
+          "score": "4.9",
+          "summary": "Shared by the women and families we serve",
+          "title": "Voices of Our Community"
+        },
+        "textblock": {
+          "body": "Founded in Mississauga, Crowned Women and Family Community Services was born from a vision to uplift women and strengthen families through empowerment and leadership. We believe every individual possesses a crown of worth, and our mission is to help them discover and claim it through culturally responsive support and advocacy. Over the past three years, we have served approximately 1,450 people annually, providing economic opportunities, mentorship, and health and wellness programs. Our journey is defined by a commitment to dignity and purpose, ensuring that our community thrives through the collective strength of our women and youth.",
+          "title": "Our Legacy of Leadership"
+        }
+      },
+      "images": {
+        "hero": {
+          "src": "https://readdy.ai/api/flash-image?query=womens%20empowerment%20and%20family%20community%20services%20nonprofit%20in%20Mississauga%2C%20Ontario%2C%20wide%20establishing%20photo%20of%20the%20business%20conveying%20Serving%20approximately%201%2C450%20people%20annually%20for%20over%20three%20years%2C%20professional%20photography%2C%20natural%20light%2C%20high%20detail%2C%20no%20text%2C%20no%20watermark%2C%20no%20logos%2C%20main%20subject%20placed%20in%20the%20right%20half%20of%20the%20frame%2C%20left%20side%20calm%20and%20uncluttered%20with%20soft%20out-of-focus%20background\u0026width=1600\u0026height=900\u0026seq=1\u0026orientation=landscape",
+          "alt": "Crowned Women and Family Community Services"
+        },
+        "showcase": {
+          "src": "https://readdy.ai/api/flash-image?query=womens%20empowerment%20and%20family%20community%20services%20nonprofit%20in%20Mississauga%2C%20Ontario%2C%20photo%20illustrating:%20Culturally%20Responsive%20Care%2C%20professional%20photography%2C%20natural%20light%2C%20high%20detail%2C%20no%20text%2C%20no%20watermark%2C%20no%20logos\u0026width=1000\u0026height=800\u0026seq=3\u0026orientation=landscape",
+          "alt": "Culturally Responsive Care"
+        },
+        "showcase2": {
+          "src": "https://readdy.ai/api/flash-image?query=womens%20empowerment%20and%20family%20community%20services%20nonprofit%20in%20Mississauga%2C%20Ontario%2C%20photo%20illustrating:%20Leadership%20and%20Economic%20Opportunity%2C%20professional%20photography%2C%20natural%20light%2C%20high%20detail%2C%20no%20text%2C%20no%20watermark%2C%20no%20logos\u0026width=1000\u0026height=800\u0026seq=4\u0026orientation=landscape",
+          "alt": "Leadership and Economic Opportunity"
+        },
+        "showcase3": {
+          "src": "https://readdy.ai/api/flash-image?query=womens%20empowerment%20and%20family%20community%20services%20nonprofit%20in%20Mississauga%2C%20Ontario%2C%20photo%20illustrating:%20Community%20Partnerships%2C%20professional%20photography%2C%20natural%20light%2C%20high%20detail%2C%20no%20text%2C%20no%20watermark%2C%20no%20logos\u0026width=1000\u0026height=800\u0026seq=5\u0026orientation=landscape",
+          "alt": "Community Partnerships"
+        },
+        "textblock": {
+          "src": "https://readdy.ai/api/flash-image?query=womens%20empowerment%20and%20family%20community%20services%20nonprofit%20in%20Mississauga%2C%20Ontario%2C%20behind%20the%20scenes%2C%20the%20team%20at%20work%2C%20candid%2C%20professional%20photography%2C%20natural%20light%2C%20high%20detail%2C%20no%20text%2C%20no%20watermark%2C%20no%20logos\u0026width=1200\u0026height=900\u0026seq=2\u0026orientation=landscape",
+          "alt": "Crowned Women and Family Community Services"
+        }
+      }
+    },
+    {
+      "kind": "about",
+      "path": "/about",
+      "title": "About Crowned Women and Family Community Services",
+      "description": "Learn who we are: over three years serving 1,450 women, girls and families in Mississauga through mentorship, counseling and leadership.",
+      "types": [
+        "navbar",
+        "hero",
+        "textblock",
+        "stats",
+        "testimonials",
+        "cta",
+        "footer",
+        "stickybar"
+      ],
+      "sections": {
+        "cta": {
+          "button": "Get Involved",
+          "subtitle": "Volunteer, partner with us, or bring your gifts to a community that empowers women and strengthens families.",
+          "title": "Join Our Mission in Mississauga"
+        },
+        "footer": {
+          "areas": [
+            "Mississauga",
+            "Brampton",
+            "Malton",
+            "Meadowvale",
+            "Streetsville",
+            "Port Credit"
+          ],
+          "brand": "Crowned Women and Family Community Services",
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/about",
+              "label": "About"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact Us"
+            }
+          ],
+          "tagline": "Empowering women, strengthening families, and building community in Mississauga."
+        },
+        "hero": {
+          "eyebrow": "About Us",
+          "primaryCta": "Explore Our Services",
+          "secondaryCta": "Get Involved",
+          "subtitle": "Founded in Mississauga, we uplift the dignity, purpose and leadership of women and girls while strengthening families through mentorship, education and advocacy.",
+          "title": "Crowned Women: Our Story and Mission"
+        },
+        "navbar": {
+          "brand": "Crowned Women \u0026 Family",
+          "cta": "Get Support",
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/about",
+              "label": "About"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact Us"
+            }
+          ]
+        },
+        "stats": {
+          "items": [
+            {
+              "label": "Years of Service",
+              "value": "3+"
+            },
+            {
+              "label": "People Served Annually",
+              "value": "1,450"
+            },
+            {
+              "label": "Dignity-Focused Mission",
+              "value": "100%"
+            },
+            {
+              "label": "Board \u0026 Civic Training",
+              "value": "Quarterly"
+            }
+          ]
+        },
+        "stickybar": {
+          "button": "Get Involved",
+          "phone": "(905) 555-0142"
+        },
+        "testimonials": {
+          "items": [
+            {
+              "name": "Sarah M.",
+              "quote": "The leadership training at Crowned Women gave me the tools to start my own business and lead with confidence.",
+              "role": "Founder"
+            },
+            {
+              "name": "Maya L.",
+              "quote": "As a newcomer, I felt so welcomed and supported. This community is truly a second home for many families.",
+              "role": "Family Member"
+            },
+            {
+              "name": "Elena R.",
+              "quote": "The mentorship program changed my life. I finally found a path forward and a community that believes in me.",
+              "role": "Youth Mentor"
+            }
+          ],
+          "title": "Voices of Our Community"
+        },
+        "textblock": {
+          "body": "Crowned Women and Family Community Services was born from a vision to uplift women and strengthen families through empowerment and leadership. We believe every person carries a crown of worth, and our mission is to help them claim it through culturally responsive support and advocacy. For over three years we have served approximately 1,450 people annually with mentorship, economic opportunities, and health and wellness programs. Our work is guided by dignity and purpose, so that women, girls and families across Mississauga and the surrounding region can thrive together.",
+          "title": "Our Legacy of Leadership"
+        }
+      },
+      "images": {
+        "textblock": {
+          "src": "https://readdy.ai/api/flash-image?query=womens%20empowerment%20and%20family%20community%20services%20nonprofit%20in%20Mississauga%2C%20Ontario%2C%20the%20team%20and%20workspace%2C%20candid%20group%20photo%2C%20professional%20photography%2C%20natural%20light%2C%20high%20detail%2C%20no%20text%2C%20no%20watermark%2C%20no%20logos\u0026width=1200\u0026height=900\u0026seq=6\u0026orientation=landscape",
+          "alt": "Crowned Women and Family Community Services"
+        }
+      }
+    },
+    {
+      "kind": "services",
+      "path": "/services",
+      "title": "Our Services | Crowned Women \u0026 Family Services",
+      "description": "Culturally responsive counseling, youth mentorship, newcomer support and leadership training for women and families in Mississauga.",
+      "types": [
+        "navbar",
+        "hero",
+        "features",
+        "steps",
+        "faq",
+        "cta",
+        "footer",
+        "stickybar"
+      ],
+      "sections": {
+        "cta": {
+          "button": "Request an Intake",
+          "subtitle": "Whether you need counseling, a mentor, or a community that believes in you, Crowned Women is here.",
+          "title": "Take the First Step Today"
+        },
+        "faq": {
+          "items": [
+            {
+              "answer": "Women, girls, youth, newcomers, couples, and families in Mississauga and the surrounding region. All backgrounds are welcome, and our programs are culturally responsive.",
+              "question": "Who can access Crowned Women services?"
+            },
+            {
+              "answer": "Most programs are offered at low or no cost thanks to community partnerships. Any fees are explained clearly before you begin.",
+              "question": "Is there a cost to participate?"
+            },
+            {
+              "answer": "Submit an intake request through our contact form or call us. We will follow up to explore available support and eligibility with you.",
+              "question": "How do I request counseling or mentorship?"
+            },
+            {
+              "answer": "Our team works with interpreters and culturally responsive partners so that language is not a barrier to care.",
+              "question": "Do you offer support in other languages?"
+            },
+            {
+              "answer": "Yes. Schools, settlement agencies, and community partners can refer women, youth, and families directly to our programs.",
+              "question": "Can I be referred by a school or community agency?"
+            }
+          ],
+          "title": "Common Questions"
+        },
+        "features": {
+          "items": [
+            {
+              "description": "A safe, respectful space for women, youth, couples, and families navigating stress, relationships, well-being, and life transitions.",
+              "icon": "💬",
+              "title": "Family Counseling"
+            },
+            {
+              "description": "Structured mentoring that builds confidence, goal setting, life skills, and positive community connections for girls and youth.",
+              "icon": "🌱",
+              "title": "Youth Mentorship"
+            },
+            {
+              "description": "Settlement guidance, referrals, and community connections for newcomers adapting to life in Mississauga.",
+              "icon": "🤝",
+              "title": "Newcomer Support"
+            },
+            {
+              "description": "Celebrating Black women and girls through heritage, sisterhood, and intergenerational mentorship, warmly welcoming all.",
+              "icon": "✨",
+              "title": "SHINE HER LIGHT"
+            },
+            {
+              "description": "Quarterly training that prepares women to serve on boards, school councils, and community committees.",
+              "icon": "🏛️",
+              "title": "Board \u0026 Civic Readiness"
+            },
+            {
+              "description": "An intensive program equipping women, especially Black women and newcomers, to enter and lead in top sectors.",
+              "icon": "👑",
+              "title": "CGIRLS Empowerment"
+            }
+          ],
+          "layout": "bento",
+          "subtitle": "Six culturally responsive programs serving women, girls, newcomers, and families across Mississauga and the surrounding region.",
+          "title": "What We Offer"
+        },
+        "footer": {
+          "areas": [
+            "Mississauga",
+            "Brampton",
+            "Malton",
+            "Meadowvale",
+            "Streetsville",
+            "Port Credit"
+          ],
+          "brand": "Crowned Women and Family Community Services",
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/about",
+              "label": "About"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact Us"
+            }
+          ],
+          "tagline": "Empowering women, strengthening families, and building community in Mississauga."
+        },
+        "hero": {
+          "eyebrow": "Our Services",
+          "primaryCta": "Request an Intake",
+          "secondaryCta": "Explore Programs",
+          "subtitle": "From family counseling and youth mentorship to newcomer support and leadership training, every Crowned Women service is built to help you move forward with dignity and confidence.",
+          "title": "Programs That Empower Women and Families"
+        },
+        "navbar": {
+          "brand": "Crowned Women \u0026 Family",
+          "cta": "Get Support",
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/about",
+              "label": "About"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact Us"
+            }
+          ]
+        },
+        "steps": {
+          "items": [
+            {
+              "description": "Submit an intake or interest form online, or call us to share what you need.",
+              "title": "Reach Out"
+            },
+            {
+              "description": "A staff member follows up to understand your situation and answer your questions.",
+              "title": "A Warm Conversation"
+            },
+            {
+              "description": "We confirm eligibility and match you with the program, mentor, or counselor that fits.",
+              "title": "Find Your Fit"
+            },
+            {
+              "description": "We begin with you, with referrals to other community resources whenever needed.",
+              "title": "Walk Together"
+            }
+          ],
+          "title": "How It Works"
+        },
+        "stickybar": {
+          "button": "Get Involved",
+          "phone": "(905) 555-0142"
+        }
+      }
+    },
+    {
+      "kind": "contact",
+      "path": "/contact",
+      "title": "Contact Crowned Women and Family Services",
+      "description": "Reach Crowned Women and Family Community Services in Mississauga: send a message, call us, or visit our office. We respond within two business days.",
+      "types": [
+        "navbar",
+        "hero",
+        "contact",
+        "map",
+        "footer",
+        "stickybar"
+      ],
+      "sections": {
+        "contact": {
+          "fields": [
+            {
+              "label": "Full Name",
+              "placeholder": "Your name",
+              "type": "text"
+            },
+            {
+              "label": "Email",
+              "placeholder": "you@example.com",
+              "type": "email"
+            },
+            {
+              "label": "Phone",
+              "placeholder": "(905) 555-0142",
+              "type": "tel"
+            },
+            {
+              "label": "How Can We Help?",
+              "options": [
+                "Family Counseling",
+                "Youth Mentorship",
+                "Newcomer Support",
+                "SHINE HER LIGHT",
+                "Volunteering",
+                "General Inquiry"
+              ],
+              "placeholder": "Select a topic",
+              "type": "select"
+            },
+            {
+              "label": "Message",
+              "placeholder": "Share a little about what you need",
+              "type": "textarea"
+            }
+          ],
+          "note": "We reply within two business days. Your information stays private and is never shared.",
+          "phone": "(905) 555-0142",
+          "submit": "Submit",
+          "subtitle": "Tell us how we can support you. Every message is read with care and kept confidential.",
+          "title": "Send Us a Message"
+        },
+        "footer": {
+          "areas": [
+            "Mississauga",
+            "Brampton",
+            "Malton",
+            "Meadowvale",
+            "Streetsville",
+            "Port Credit"
+          ],
+          "brand": "Crowned Women and Family Community Services",
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/about",
+              "label": "About"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact Us"
+            }
+          ],
+          "tagline": "Empowering women, strengthening families, and building community in Mississauga."
+        },
+        "hero": {
+          "eyebrow": "We're here for you",
+          "primaryCta": "Send a Message",
+          "secondaryCta": "Call (905) 555-0142",
+          "subtitle": "Questions about counseling, mentorship, newcomer support or volunteering? Reach out and a member of our team will get back to you within two business days.",
+          "title": "Contact Us"
+        },
+        "map": {
+          "address": "1200 Eglinton Ave E, Mississauga, ON",
+          "hours": [
+            {
+              "day": "Monday – Thursday",
+              "time": "9:00 am – 5:00 pm"
+            },
+            {
+              "day": "Friday",
+              "time": "9:00 am – 3:00 pm"
+            },
+            {
+              "day": "Saturday",
+              "time": "10:00 am – 2:00 pm (by appointment)"
+            },
+            {
+              "day": "Sunday",
+              "time": "Closed"
+            }
+          ],
+          "note": "Wheelchair accessible. Free parking on site. Newcomers and families always welcome.",
+          "subtitle": "Drop in, call ahead, or book a confidential conversation — whatever feels right for you.",
+          "title": "Visit Us in Mississauga"
+        },
+        "navbar": {
+          "brand": "Crowned Women \u0026 Family",
+          "cta": "Get Support",
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/about",
+              "label": "About"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact Us"
+            }
+          ]
+        },
+        "stickybar": {
+          "button": "Get Involved",
+          "phone": "(905) 555-0142"
+        }
+      }
+    }
+  ]
+}
