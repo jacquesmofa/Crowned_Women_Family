@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import useTx from '@/hooks/useTx';
 import { setLanguage } from '@/i18n';
+import { SITE } from '@/seo/site';
 
 export const NAV = [
   { to: '/', key: 'home' }, { to: '/about', key: 'about' }, { to: '/services', key: 'services' }, { to: '/cgirls', key: 'cgirls' },
@@ -23,9 +24,8 @@ export function LangToggle({ small }: { small?: boolean }) {
 export function Logo() {
   return (
     <Link to="/" className="flex items-center gap-3 no-underline cursor-pointer" aria-label="CWFCS home">
-      <span className="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style={{ border: '1px solid var(--accent)', color: 'var(--accent)' }}>
-        <i className="ri-vip-crown-2-line text-lg" />
-      </span>
+      <img src={SITE.logoMark} alt="Crowned Women and Family Community Services logo" width={44} height={44} decoding="async"
+        className="w-11 h-11 rounded-full object-cover shrink-0" style={{ border: '1px solid color-mix(in srgb, var(--accent) 55%, transparent)' }} />
       <span className="leading-tight">
         <span className="block text-[15px] font-semibold tracking-tight">Crowned Women</span>
         <span className="block text-[10px] tracking-[.18em] uppercase" style={{ color: 'var(--muted)', fontFamily: 'var(--font-label)' }}>& Family · CWFCS</span>

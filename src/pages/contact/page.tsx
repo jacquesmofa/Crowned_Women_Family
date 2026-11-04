@@ -2,6 +2,7 @@ import { useState } from 'react';
 import useTx from '@/hooks/useTx';
 import usePageMeta from '@/hooks/usePageMeta';
 import Rich from '@/components/base/Rich';
+import JsonLd from '@/components/base/JsonLd';
 import Panel from '@/components/feature/Panel';
 import InquiryForm from '@/components/feature/forms/InquiryForm';
 import { EMAIL } from '@/components/feature/forms/FormBits';
@@ -19,6 +20,19 @@ export default function Contact() {
 
   return (
     <>
+      {/* FAQPage schema built only from the questions and answers rendered below */}
+      <JsonLd
+        id="faq"
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faq.map((f) => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          })),
+        }}
+      />
       <Panel id="inquiry" side="full" img={IMG.contactHero} alt="Brick community building entrance with warm light on a frosty evening" wide>
         <div className="w-full max-w-[1200px] mx-auto flex flex-col gap-10">
           <div className="flex flex-col gap-4 max-w-[760px]">

@@ -36,3 +36,23 @@ DirectoryIndex index.html
   AddOutputFilterByType DEFLATE application/javascript application/json
   AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
+
+# Correct content type for the web app manifest, and a short cache so icon changes go live fast
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType application/xml .xml
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresByType application/manifest+json "access plus 1 day"
+  ExpiresByType application/xml "access plus 1 day"
+  ExpiresByType text/plain "access plus 1 day"
+</IfModule>
+
+# Baseline security headers (HostGator supports these on Apache/LiteSpeed)
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+  # Enable HSTS only after the padlock is confirmed working on the live domain:
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
