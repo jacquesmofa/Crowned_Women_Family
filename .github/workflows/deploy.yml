@@ -1,0 +1,69 @@
+name: Deploy to HostGator
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: hostgator-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
+
+      - name: Build site
+        env:
+          BASE_PATH: /
+        run: npm run build -- --outDir dist
+
+      - name: Ensure Apache routing and caching rules
+        run: |
+          if [ ! -f dist/.htaccess ]; then
+            cat > dist/.htaccess <<'HTACCESS'
+          Options -MultiViews
+          DirectoryIndex index.html
+          <IfModule mod_rewrite.c>
+            RewriteEngine On
+            RewriteBase /
+            RewriteCond %{HTTPS} !=on
+            RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+            RewriteCond %{REQUEST_FILENAME} -f [OR]
+            RewriteCond %{REQUEST_FILENAME} -d
+            RewriteRule ^ - [L]
+            RewriteRule . /index.html [L]
+          </IfModule>
+          HTACCESS
+          fi
+          echo "Uploading $(find dist -type f | wc -l) files to /public_html/"
+
+      - name: Deploy static files to HostGator
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          local-dir: ./dist/
+          server-dir: /public_html/
+          dangerous-clean-slate: false
