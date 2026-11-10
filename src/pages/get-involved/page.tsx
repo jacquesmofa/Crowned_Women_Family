@@ -4,6 +4,7 @@ import usePageMeta from '@/hooks/usePageMeta';
 import Rich from '@/components/base/Rich';
 import Panel from '@/components/feature/Panel';
 import VolunteerForm from '@/components/feature/forms/VolunteerForm';
+import VideoReel from '@/components/feature/VideoReel';
 import { IMG } from '@/mocks/media';
 
 interface CardItem { t: string; d: string; icon: string; href: string }
@@ -39,6 +40,8 @@ export default function GetInvolved() {
           </div>
         </div>
       </Panel>
+
+      <VideoReel />
 
       <Panel id="join" side="full" img={IMG.aboutValues} alt="Women applauding a graduate in a warm hall" wide>
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 items-center w-full max-w-[1200px] mx-auto">

@@ -5,6 +5,7 @@ import Panel from '@/components/feature/Panel';
 import InquiryForm, { SERVICE_KEYS } from '@/components/feature/forms/InquiryForm';
 import { EMAIL } from '@/components/feature/forms/FormBits';
 import { IMG } from '@/mocks/media';
+import VideoReel from '@/components/feature/VideoReel';
 
 interface Program { title: string; summary: string }
 interface Testimonial { quote: string; name: string; role: string }
@@ -79,6 +80,8 @@ export default function HomePanels() {
           ))}
         </div>
       </Panel>
+
+      <VideoReel />
 
       <Panel id="gatherings" side="right" img={IMG.events} alt="Women celebrating at an African and Caribbean cultural evening" accent="18" accentPos="left-[8vw] bottom-[12%]">
         <p className="stamp" data-reveal>{s('home.eventsStamp')}</p>

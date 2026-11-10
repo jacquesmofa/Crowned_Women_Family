@@ -206,3 +206,39 @@ textarea.input { min-height: 120px; resize: vertical; }
 .accordion-body > div { overflow: hidden; }
 .logo-tile { filter: grayscale(1); opacity: .7; transition: filter .3s, opacity .3s, transform .25s; }
 .logo-tile:hover { filter: none; opacity: 1; transform: translateY(-4px); }
+/* ---------- FOOD PANTRY FILM REEL (Mux videos, see src/content/videos.json) ---------- */
+.reel { position: relative; overflow: clip; background: var(--bg); padding: clamp(80px, 12vh, 140px) 20px; }
+.reel-ring { position: absolute; z-index: 0; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--accent) 16%, transparent); pointer-events: none; }
+.reel-inner { position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; display: grid; gap: clamp(28px, 4vw, 48px); }
+.reel-head { display: grid; gap: 14px; max-width: 760px; }
+.reel-head h2 { font-size: clamp(30px, 5.2vw, 68px); line-height: 1.04; letter-spacing: -.03em; font-weight: 600; margin: 0; }
+.reel-head .sub { font-size: clamp(15px, 1.3vw, 19px); line-height: 1.6; margin: 0; color: color-mix(in srgb, var(--text) 85%, transparent); max-width: 60ch; }
+.reel-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (min-width: 1024px) { .reel-grid { grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr); gap: 32px; } }
+.reel-frame { position: relative; border-radius: 22px; overflow: hidden; background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  box-shadow: 0 30px 80px -30px color-mix(in srgb, #000 70%, transparent), 0 0 0 6px color-mix(in srgb, var(--accent) 7%, transparent); }
+.reel-frame mux-player { --media-object-fit: cover; aspect-ratio: 16 / 9; }
+.reel-caption { display: grid; gap: 4px; margin-top: 16px; padding-left: 16px; border-left: 2px solid var(--accent); }
+.reel-caption strong { font-size: clamp(18px, 1.6vw, 22px); font-weight: 600; }
+.reel-caption span:last-child { color: var(--muted); font-size: 15px; line-height: 1.55; }
+.reel-now { font-family: var(--font-label); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent2); }
+.reel-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+@media (max-width: 1023px) { .reel-list { grid-auto-flow: column; grid-auto-columns: minmax(240px, 72%); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+  .reel-list li { scroll-snap-align: start; } }
+.reel-item { width: 100%; display: grid; grid-template-columns: 136px minmax(0, 1fr); gap: 14px; align-items: center; text-align: left; padding: 10px; cursor: pointer;
+  border-radius: 16px; color: inherit; font: inherit; background: color-mix(in srgb, var(--surface) 70%, transparent);
+  border: 1px solid color-mix(in srgb, var(--text) 10%, transparent); transition: border-color .25s, background .25s, transform .25s; }
+.reel-item:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--text) 26%, transparent); }
+.reel-item[aria-current="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--surface)); }
+.reel-thumb { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: var(--bg); }
+.reel-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.reel-time { position: absolute; right: 6px; bottom: 6px; padding: 2px 6px; border-radius: 6px; font-family: var(--font-label); font-size: 10px;
+  background: color-mix(in srgb, var(--bg) 80%, transparent); color: var(--text); }
+.reel-badge { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 26px; color: var(--bg);
+  background: color-mix(in srgb, var(--bg) 35%, transparent); color: var(--accent); }
+.reel-meta { display: grid; gap: 4px; min-width: 0; }
+.reel-idx { font-family: var(--font-accent); font-style: italic; font-weight: 700; color: var(--accent); font-size: 18px; line-height: 1; }
+.reel-title { font-size: 15px; font-weight: 500; line-height: 1.35; }
+@media (max-width: 1023px) { .reel-item { grid-template-columns: minmax(0, 1fr); height: 100%; align-content: start; } }
+@media (prefers-reduced-motion: reduce) { .reel-item, .reel-item:hover { transition: none; transform: none; } }

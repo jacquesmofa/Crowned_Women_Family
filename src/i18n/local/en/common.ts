@@ -54,6 +54,12 @@ const en = {
     partnerLine: "Working together with", partnerName: "Peel District School Board",
     contactStamp: "07 — Get in touch", contactTitle: "Every woman carries a light.||Help her [[shine]] it.",
   },
+  films: {
+    stamp: "Food Pantry · On film",
+    title: "Food, dignity and||[[community]] on every shelf.",
+    sub: "Our Food Pantry keeps families in Mississauga fed with care and respect. Watch our team and volunteers at work, and hear why this work matters.",
+    nowPlaying: "Now playing", play: "Play video", listLabel: "Food Pantry videos",
+  },
   testimonials: [
     { quote: "The leadership training at Crowned Women gave me the tools to start my own business and lead with confidence.", name: "Sarah M.", role: "Founder" },
     { quote: "As a newcomer, I felt so welcomed and supported. This community is truly a second home for many families.", name: "Maya L.", role: "Family Member" },

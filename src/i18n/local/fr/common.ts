@@ -54,6 +54,12 @@ const fr = {
     partnerLine: "En collaboration avec", partnerName: "Peel District School Board",
     contactStamp: "07 — Écrivez-nous", contactTitle: "Chaque femme porte une lumière.||Aidez-la à la faire [[briller]].",
   },
+  films: {
+    stamp: "Banque alimentaire · En images",
+    title: "Nourriture, dignité et||[[communauté]] sur chaque tablette.",
+    sub: "Notre banque alimentaire aide les familles de Mississauga à se nourrir, avec soin et respect. Découvrez notre équipe et nos bénévoles à l’œuvre, et pourquoi ce travail compte.",
+    nowPlaying: "À l’écran", play: "Lire la vidéo", listLabel: "Vidéos de la banque alimentaire",
+  },
   testimonials: [
     { quote: "La formation en leadership de Crowned Women m’a donné les outils pour lancer ma propre entreprise et diriger avec assurance.", name: "Sarah M.", role: "Fondatrice" },
     { quote: "En tant que nouvelle arrivante, je me suis sentie si bien accueillie et soutenue. Cette communauté est vraiment un deuxième foyer pour bien des familles.", name: "Maya L.", role: "Membre d’une famille" },
