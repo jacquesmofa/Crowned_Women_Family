@@ -57,7 +57,7 @@ const en = {
   films: {
     stamp: "Food Pantry · On film",
     title: "Food, dignity and||[[community]] on every shelf.",
-    sub: "Our Food Pantry keeps families in Mississauga fed with care and respect. Watch our team and volunteers at work, and hear why this work matters.",
+    sub: "Our Food Pantry keeps families across the Peel Region fed with care and respect. Watch our team and volunteers at work, and hear why this work matters.",
     nowPlaying: "Now playing", play: "Play video", listLabel: "Food Pantry videos",
   },
   testimonials: [

@@ -57,7 +57,7 @@ const fr = {
   films: {
     stamp: "Banque alimentaire · En images",
     title: "Nourriture, dignité et||[[communauté]] sur chaque tablette.",
-    sub: "Notre banque alimentaire aide les familles de Mississauga à se nourrir, avec soin et respect. Découvrez notre équipe et nos bénévoles à l’œuvre, et pourquoi ce travail compte.",
+    sub: "Notre banque alimentaire aide les familles de la région de Peel à se nourrir, avec soin et respect. Découvrez notre équipe et nos bénévoles à l’œuvre, et pourquoi ce travail compte.",
     nowPlaying: "À l’écran", play: "Lire la vidéo", listLabel: "Vidéos de la banque alimentaire",
   },
   testimonials: [
