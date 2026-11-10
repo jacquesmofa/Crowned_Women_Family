@@ -1,15 +1,15 @@
 // Central English dictionary for the whole site.
 const en = {
   meta: {
-    home: ["Mississauga Women & Family Services | CWFCS", "Crowned Women and Family Community Services empowers women, strengthens families and builds community in Mississauga through mentorship, education and advocacy."],
-    about: ["About CWFCS | Our Legacy of Leadership, Mississauga", "Learn the story, values and leadership of Crowned Women and Family Community Services, a women-led, culturally responsive non-profit in Mississauga."],
-    services: ["Programs & Services | CWFCS Mississauga", "Family counseling, youth mentorship, newcomer support, Shine Her Light, board readiness training and CGIRLS: culturally responsive programs in Mississauga."],
-    cgirls: ["CGIRLS: Breaking the Concrete Ceiling | CWFCS", "CGIRLS equips Black women, newcomers and women facing systemic barriers to enter, advance and lead in Canada's top professional sectors."],
-    events: ["Events | Crowned Women and Family Community Services", "Join CWFCS cultural celebrations, empowerment workshops and leadership panel discussions across Mississauga. RSVP online."],
-    partners: ["Our Partners | CWFCS Mississauga", "We achieve more together. Partner with CWFCS to open doors for women, youth and families across Mississauga and the Peel region."],
-    involved: ["Get Involved: Volunteer, Partner, Donate | CWFCS", "Join our mission. Volunteer, become a partner or donate to empower women and strengthen families in Mississauga."],
-    contact: ["Contact CWFCS | 6850 Milcreek Drive, Mississauga", "Explore our services and get in touch with Crowned Women and Family Community Services in Mississauga. Send a service inquiry today."],
-    notFound: ["Page Not Found | CWFCS", "The page you are looking for could not be found. Return to the Crowned Women and Family Community Services home page."],
+    home: ["Crowned Women and Family Community Services | Peel Region", "Crowned Women and Family Community Services: a women-led, culturally responsive non-profit empowering women, strengthening families and building community across the Peel Region."],
+    about: ["About Us | Crowned Women and Family Community Services", "The story, values and leadership of Crowned Women and Family Community Services, a women-led, culturally responsive non-profit serving women and families across the Peel Region."],
+    services: ["Programs & Services | Crowned Women and Family Community Services", "Family counseling, youth mentorship, newcomer support, Shine Her Light, board readiness training and CGIRLS: culturally responsive programs across the Peel Region."],
+    cgirls: ["CGIRLS: Breaking the Concrete Ceiling | Crowned Women and Family Community Services", "CGIRLS equips Black women, newcomers and women facing systemic barriers to enter, advance and lead in Canada's top professional sectors."],
+    events: ["Events | Crowned Women and Family Community Services", "Join our cultural celebrations, empowerment workshops and leadership panels across the Peel Region. RSVP online."],
+    partners: ["Our Partners | Crowned Women and Family Community Services", "We achieve more together. Partner with Crowned Women and Family Community Services to open doors for women, youth and families across the Peel Region."],
+    involved: ["Get Involved: Volunteer, Partner, Donate | Crowned Women and Family Community Services", "Join our mission. Volunteer, become a partner or donate to empower women and strengthen families across the Peel Region."],
+    contact: ["Contact Us | Crowned Women and Family Community Services", "Get in touch with Crowned Women and Family Community Services, 6850 Milcreek Drive, Mississauga, serving the Peel Region. Send a service inquiry today."],
+    notFound: ["Page Not Found | Crowned Women and Family Community Services", "The page you are looking for could not be found. Return to the Crowned Women and Family Community Services home page."],
   },
   nav: {
     home: "Home", about: "About", services: "Services", cgirls: "CGIRLS", events: "Events",

@@ -13,7 +13,7 @@ export const SITE = {
   city: 'Mississauga',
   region: 'ON',
   country: 'CA',
-  areaServed: ['Mississauga', 'Peel Region'],
+  areaServed: ['Peel Region', 'Mississauga', 'Brampton', 'Caledon'],
   themeColor: '#35200B',
   backgroundColor: '#35200B',
   locale: 'en_CA',

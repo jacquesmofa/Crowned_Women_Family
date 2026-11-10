@@ -1,15 +1,15 @@
 // Dictionnaire français central du site (français canadien).
 const fr = {
   meta: {
-    home: ["Services aux femmes et familles à Mississauga | CWFCS", "Crowned Women and Family Community Services autonomise les femmes, renforce les familles et bâtit la communauté à Mississauga par le mentorat, l’éducation et la défense des droits."],
-    about: ["À propos de CWFCS | Notre héritage de leadership", "Découvrez l’histoire, les valeurs et l’équipe de direction de Crowned Women and Family Community Services, un organisme à but non lucratif dirigé par des femmes à Mississauga."],
-    services: ["Programmes et services | CWFCS Mississauga", "Counseling familial, mentorat jeunesse, soutien aux nouveaux arrivants, Shine Her Light, formation de préparation aux conseils et CGIRLS à Mississauga."],
-    cgirls: ["CGIRLS : briser le plafond de béton | CWFCS", "CGIRLS outille les femmes noires, les nouvelles arrivantes et les femmes confrontées à des obstacles systémiques pour accéder aux grands secteurs professionnels du Canada et y diriger."],
-    events: ["Événements | Crowned Women and Family Community Services", "Participez aux célébrations culturelles, ateliers d’autonomisation et tables rondes sur le leadership de CWFCS à Mississauga. Confirmez votre présence en ligne."],
-    partners: ["Nos partenaires | CWFCS Mississauga", "Ensemble, nous accomplissons davantage. Devenez partenaire de CWFCS pour ouvrir des portes aux femmes, aux jeunes et aux familles de Mississauga et de Peel."],
-    involved: ["S’impliquer : bénévolat, partenariat, don | CWFCS", "Joignez-vous à notre mission. Faites du bénévolat, devenez partenaire ou faites un don pour autonomiser les femmes et renforcer les familles à Mississauga."],
-    contact: ["Contactez CWFCS | 6850 Milcreek Drive, Mississauga", "Découvrez nos services et communiquez avec Crowned Women and Family Community Services à Mississauga. Envoyez une demande de service dès aujourd’hui."],
-    notFound: ["Page introuvable | CWFCS", "La page que vous cherchez est introuvable. Retournez à l’accueil de Crowned Women and Family Community Services."],
+    home: ["Crowned Women and Family Community Services | Région de Peel", "Crowned Women and Family Community Services : un organisme à but non lucratif dirigé par des femmes, culturellement adapté, qui autonomise les femmes, renforce les familles et bâtit la communauté dans toute la région de Peel."],
+    about: ["À propos | Crowned Women and Family Community Services", "L’histoire, les valeurs et l’équipe de Crowned Women and Family Community Services, un organisme dirigé par des femmes au service des femmes et des familles de toute la région de Peel."],
+    services: ["Programmes et services | Crowned Women and Family Community Services", "Counseling familial, mentorat jeunesse, soutien aux nouveaux arrivants, Shine Her Light, préparation aux conseils et CGIRLS : des programmes culturellement adaptés dans la région de Peel."],
+    cgirls: ["CGIRLS : briser le plafond de béton | Crowned Women and Family Community Services", "CGIRLS outille les femmes noires, les nouvelles arrivantes et les femmes confrontées à des obstacles systémiques pour accéder aux grands secteurs professionnels du Canada et y diriger."],
+    events: ["Événements | Crowned Women and Family Community Services", "Participez à nos célébrations culturelles, ateliers d’autonomisation et tables rondes sur le leadership dans la région de Peel. Confirmez votre présence en ligne."],
+    partners: ["Nos partenaires | Crowned Women and Family Community Services", "Ensemble, nous accomplissons davantage. Devenez partenaire de Crowned Women and Family Community Services pour ouvrir des portes aux femmes, aux jeunes et aux familles de la région de Peel."],
+    involved: ["S’impliquer : bénévolat, partenariat, don | Crowned Women and Family Community Services", "Joignez-vous à notre mission. Faites du bénévolat, devenez partenaire ou faites un don pour autonomiser les femmes et renforcer les familles de la région de Peel."],
+    contact: ["Contactez-nous | Crowned Women and Family Community Services", "Communiquez avec Crowned Women and Family Community Services, 6850 Milcreek Drive, Mississauga, au service de la région de Peel. Envoyez une demande de service dès aujourd’hui."],
+    notFound: ["Page introuvable | Crowned Women and Family Community Services", "La page que vous cherchez est introuvable. Retournez à l’accueil de Crowned Women and Family Community Services."],
   },
   nav: {
     home: "Accueil", about: "À propos", services: "Services", cgirls: "CGIRLS", events: "Événements",
