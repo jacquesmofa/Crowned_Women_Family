@@ -1,58 +1,54 @@
-# CWFCS — Apache configuration for the live site on HostGator
-# This file is copied into the build output automatically and is required so that
-# direct links such as /about, /services or /contact open the right page instead of a 404.
+# Crowned Women and Family Community Services — HostGator (Apache) settings for the React site.
 
-Options -MultiViews
 DirectoryIndex index.html
+Options -Indexes -MultiViews
+AddType application/manifest+json .webmanifest
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Never rewrite real files or real folders (images, css, js, assets)
+  # Always use https
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # /about.html -> /about (one clean address per page)
+  RewriteCond %{THE_REQUEST} \s/+([^\s?]+?)\.html[\s?]
+  RewriteCond %1 !(^|/)index$
+  RewriteRule ^ /%1 [R=301,L]
+
+  # /about/ -> /about (unless it is a real folder)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # Pages with their own share preview (about.html, contact.html...: see scripts/social-pages.mjs)
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*[^/])$ $1.html [L]
+
+  # Real files, and folders that have their own index.html (e.g. /admin/), are served as they are
   RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
   RewriteRule ^ - [L]
 
-  # Everything else is a single-page-app route: serve index.html
-  RewriteRule ^ index.html [L]
-</IfModule>
-
-# Let browsers keep hashed assets for a long time, but always re-check the HTML shell
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType text/html "access plus 0 seconds"
-  ExpiresByType text/css "access plus 1 year"
-  ExpiresByType application/javascript "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 6 months"
-  ExpiresByType image/png "access plus 6 months"
-  ExpiresByType image/webp "access plus 6 months"
-  ExpiresByType image/svg+xml "access plus 6 months"
-  ExpiresByType font/woff2 "access plus 1 year"
+  # Every other address is a page of the React app
+  RewriteRule ^ /index.html [L]
 </IfModule>
 
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
-  AddOutputFilterByType DEFLATE application/javascript application/json
-  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml
 </IfModule>
 
-# Correct content type for the web app manifest, and a short cache so icon changes go live fast
-<IfModule mod_mime.c>
-  AddType application/manifest+json .webmanifest
-  AddType application/xml .xml
-</IfModule>
-<IfModule mod_expires.c>
-  ExpiresByType application/manifest+json "access plus 1 day"
-  ExpiresByType application/xml "access plus 1 day"
-  ExpiresByType text/plain "access plus 1 day"
-</IfModule>
-
-# Baseline security headers (HostGator supports these on Apache/LiteSpeed)
 <IfModule mod_headers.c>
-  Header always set X-Content-Type-Options "nosniff"
-  Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
-  # Enable HSTS only after the padlock is confirmed working on the live domain:
-  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  # Built files have a fingerprint in their name, so they can be cached for a year
+  <FilesMatch "-[A-Za-z0-9_-]{8}\.(js|css|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  # Pages are always re-checked, so a new deploy shows up immediately
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  # Source maps are for debugging only
+  <FilesMatch "\.map$">
+    Require all denied
+  </FilesMatch>
 </IfModule>

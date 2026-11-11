@@ -1,0 +1,65 @@
+{
+  "_help": "Share previews (Facebook, WhatsApp, LinkedIn, X...) and the sitemap, used by scripts/social-pages.mjs at every build. Keep in step with src/seo/site.ts (domain, pictures) and the English meta text in src/i18n/local/en/common.ts.",
+  "site": {
+    "name": "Crowned Women and Family Community Services",
+    "url": "https://crownedwomenandfamilycommunityservices.org",
+    "locale": "en_CA",
+    "localeAlternate": "fr_CA",
+    "image": "https://res.cloudinary.com/hxhakwbe/image/upload/c_pad,b_rgb:2a1a2c,w_1200,h_630,f_jpg,q_auto/v1793795522/Croned_Logo_zfvshh.jpg",
+    "imageAlt": "Crowned Women and Family Community Services logo on a deep plum background"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "title": "Crowned Women and Family Community Services | Peel Region",
+      "description": "Crowned Women and Family Community Services: a women-led, culturally responsive non-profit empowering women, strengthening families and building community across the Peel Region."
+    },
+    {
+      "path": "/about",
+      "title": "About Us | Crowned Women and Family Community Services",
+      "description": "The story, values and leadership of Crowned Women and Family Community Services, a women-led, culturally responsive non-profit serving women and families across the Peel Region.",
+      "image": "https://res.cloudinary.com/hxhakwbe/image/upload/c_fill,g_auto,w_1200,h_630,q_auto:good,f_jpg/v1794429501/Marita_Ex_Dir_w2dmin.jpg",
+      "imageAlt": "Marita, Executive Director of Crowned Women and Family Community Services"
+    },
+    {
+      "path": "/services",
+      "title": "Programs & Services | Crowned Women and Family Community Services",
+      "description": "Family counseling, youth mentorship, newcomer support, Shine Her Light, board readiness training and CGIRLS: culturally responsive programs across the Peel Region.",
+      "image": "https://res.cloudinary.com/hxhakwbe/image/upload/c_fill,g_auto,w_1200,h_630,q_auto:good,f_jpg/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_1_qhwznh.jpg",
+      "imageAlt": "Volunteers sorting groceries at the Crowned Women Food Pantry"
+    },
+    {
+      "path": "/cgirls",
+      "title": "CGIRLS: Breaking the Concrete Ceiling | Crowned Women and Family Community Services",
+      "description": "CGIRLS equips Black women, newcomers and women facing systemic barriers to enter, advance and lead in Canada's top professional sectors."
+    },
+    {
+      "path": "/events",
+      "title": "Events | Crowned Women and Family Community Services",
+      "description": "Join our cultural celebrations, empowerment workshops and leadership panels across the Peel Region. RSVP online."
+    },
+    {
+      "path": "/partners",
+      "title": "Our Partners | Crowned Women and Family Community Services",
+      "description": "We achieve more together. Partner with Crowned Women and Family Community Services to open doors for women, youth and families across the Peel Region."
+    },
+    {
+      "path": "/get-involved",
+      "title": "Get Involved: Volunteer, Partner, Donate | Crowned Women and Family Community Services",
+      "description": "Join our mission. Volunteer, become a partner or donate to empower women and strengthen families across the Peel Region.",
+      "image": "https://res.cloudinary.com/hxhakwbe/image/upload/c_fill,g_auto,w_1200,h_630,q_auto:good,f_jpg/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_4_ae71yl.jpg",
+      "imageAlt": "A smiling volunteer at the Crowned Women Food Pantry"
+    },
+    {
+      "path": "/contact",
+      "title": "Contact Us | Crowned Women and Family Community Services",
+      "description": "Get in touch with Crowned Women and Family Community Services, 6850 Milcreek Drive, Mississauga, serving the Peel Region. Send a service inquiry today."
+    },
+    {
+      "path": "/404",
+      "title": "Page Not Found | Crowned Women and Family Community Services",
+      "description": "The page you are looking for could not be found. Return to the Crowned Women and Family Community Services home page.",
+      "noindex": true
+    }
+  ]
+}

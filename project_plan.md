@@ -34,7 +34,7 @@ Flagship bilingual (EN/FR) website for a women-led, culturally responsive non-pr
   server-side injection of the tags in the hosting template. Documented for the owner.
 - hreflang is intentionally omitted: both languages share one URL, so alternate URLs would
   have to exist first. og:locale / og:locale:alternate are set.
-- Domain assumption: https://crowned.org — change once in `src/seo/site.ts` plus
+- Domain assumption: https://crownedwomenandfamilycommunityservices.org — change once in `src/seo/site.ts` plus
   `public/sitemap.xml` and `public/robots.txt` if the live host differs.
 
 ## 4. Data Model Design

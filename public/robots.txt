@@ -8,4 +8,4 @@ Disallow: /404
 User-agent: Googlebot
 Allow: /
 
-Sitemap: https://crowned.org/sitemap.xml
+Sitemap: https://crownedwomenandfamilycommunityservices.org/sitemap.xml

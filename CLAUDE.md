@@ -2,7 +2,7 @@
 
 Women-led, culturally responsive non-profit in the Peel Region (women, families, community).
 
-- Live domain: ❓ unconfirmed. `src/seo/site.ts` assumes https://crowned.org, but crowned.org is NOT on the HostGator account. The HostGator site folder is `/crownedwomenandfamilycommunityservices.org`.
+- Live domain: https://crownedwomenandfamilycommunityservices.org (HostGator folder of the same name). The old code assumed crowned.org, which is not on this account: changed everywhere 11 Nov 2026.
 - Host: HostGator (server `gator3095.hostgator.com`, cPanel user `irineashu`)
 - Design and audience: see `brand-dna.md`. Placeholders: `PLACEHOLDERS.md` (create it when you find one).
 
@@ -22,7 +22,14 @@ Women-led, culturally responsive non-profit in the Peel Region (women, families,
 - Routes: `/`, `/404`, `/about`, `/cgirls`, `/contact`, `/events`, `/get-involved`, `/partners`, `/services`.
 
 ## Deploy
-- `.github/workflows/deploy.yml`: push to `main` → build → FTP upload to `vars.FTP_SERVER_DIR` (default `/crowned.org/`). **FTP step failing since 4 Nov** ("Failed to connect / Timeout"). Fix: secret `FTP_SERVER` = `gator3095.hostgator.com` (host only, no `ftp://`), and repo variable `FTP_SERVER_DIR` = `/crownedwomenandfamilycommunityservices.org/` (not `/crowned.org/`). Better: move to the studio standard workflow (copy `jacquesmofa/SANKOFA/.github/workflows/deploy.yml`: FTPS, one FTP account per site, preview/production switch, live check). Manual "Run workflow" button exists.
+- `.github/workflows/deploy.yml` (studio standard since 11 Nov 2026): push to `main` → `npm ci && npm run build` → FTPS upload of `out/` → live check of the site and every sitemap address.
+- Secrets `FTP_SERVER` (= gator3095.hostgator.com), `FTP_USERNAME`, `FTP_PASSWORD`. The workflow finds the site folder itself (FTP account rooted at the site folder → `./`; at the top of the hosting account → `/crownedwomenandfamilycommunityservices.org/`). Optional variables: `SITE_URL`, `FTP_SERVER_DIR`, `FTP_PROTOCOL`.
+- `public/.htaccess`: https, clean addresses, one share-preview page per address, SPA fallback, caching. (`out/` is no longer committed.)
+
+## Share previews and SEO
+- `src/content/seo.json` → `scripts/social-pages.mjs` (inside `npm run build`): one HTML file per page (e.g. `out/about.html`) with that page's title, description, canonical and 1200×630 picture, plus `sitemap.xml`. Social apps never run JavaScript, so this is what they show.
+- In the browser, `src/hooks/usePageMeta.ts` sets the same tags per page and language from `src/seo/site.ts` (domain, per-page pictures) and `meta.*` in the i18n files. Keep the English text in `seo.json` in step.
+- Pictures: logo card (home and most pages); Marita (About), pantry volunteers (Services), smiling volunteer (Get Involved), all Cloudinary crops.
 
 ## Where things live
 - Pages: `src/pages/<page>/` (one folder per page, sections in `components/`). Routes: `src/router/`.

@@ -52,6 +52,8 @@ export default function usePageMeta(key: string) {
   const [title, desc] = o<string[]>(`meta.${key}`);
   const page = PAGES[key] ?? PAGES.home;
   const url = absoluteUrl(page.path);
+  const image = page.image ?? SITE.shareImage;
+  const imageAlt = page.imageAlt ?? SITE.shareImageAlt;
 
   useEffect(() => {
     const inLanguage = lang === 'fr' ? 'fr-CA' : 'en-CA';
@@ -69,12 +71,12 @@ export default function usePageMeta(key: string) {
     setMeta('og:title', title, 'property');
     setMeta('og:description', desc, 'property');
     setMeta('og:url', url, 'property');
-    setMeta('og:image', SITE.shareImage, 'property');
-    setMeta('og:image:secure_url', SITE.shareImage, 'property');
+    setMeta('og:image', image, 'property');
+    setMeta('og:image:secure_url', image, 'property');
     setMeta('og:image:type', 'image/jpeg', 'property');
     setMeta('og:image:width', '1200', 'property');
     setMeta('og:image:height', '630', 'property');
-    setMeta('og:image:alt', SITE.shareImageAlt, 'property');
+    setMeta('og:image:alt', imageAlt, 'property');
     setMeta('og:locale', SITE.locale, 'property');
     setMeta('og:locale:alternate', SITE.localeAlt, 'property');
 
@@ -82,8 +84,8 @@ export default function usePageMeta(key: string) {
     setMeta('twitter:card', 'summary_large_image');
     setMeta('twitter:title', title);
     setMeta('twitter:description', desc);
-    setMeta('twitter:image', SITE.shareImage);
-    setMeta('twitter:image:alt', SITE.shareImageAlt);
+    setMeta('twitter:image', image);
+    setMeta('twitter:image:alt', imageAlt);
 
     // --- page-level structured data ---------------------------------------
     setJsonLd('cw-page-schema', {
@@ -96,8 +98,8 @@ export default function usePageMeta(key: string) {
       inLanguage,
       isPartOf: { '@id': `${SITE.domain}/#website` },
       about: { '@id': `${SITE.domain}/#organization` },
-      primaryImageOfPage: { '@type': 'ImageObject', url: SITE.shareImage },
+      primaryImageOfPage: { '@type': 'ImageObject', url: image },
       ...(key === 'notFound' ? {} : { potentialAction: { '@type': 'ReadAction', target: [url] } }),
     });
-  }, [title, desc, url, page.type, page.robots, lang]);
+  }, [title, desc, url, image, imageAlt, page.type, page.robots, lang]);
 }
