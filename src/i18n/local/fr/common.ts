@@ -54,6 +54,47 @@ const fr = {
     partnerLine: "En collaboration avec", partnerName: "Peel District School Board",
     contactStamp: "07 — Écrivez-nous", contactTitle: "Chaque femme porte une lumière.||Aidez-la à la faire [[briller]].",
   },
+  pantry: {
+    stamp: "Banque alimentaire · Bailleurs et partenaires",
+    title: "Chaque don devient||une [[table garnie]].",
+    lead: "Notre banque alimentaire est la porte d’entrée de tout ce que fait Crowned Women. Une mère qui vient chercher des provisions repart avec de quoi nourrir sa famille pour la semaine, un accueil chaleureux et un accès direct au counseling, au mentorat, au soutien aux nouveaux arrivants et à nos programmes pour les filles. Votre soutien nourrit les familles aujourd’hui et ouvre la voie à un changement durable.",
+    facts: ["Dirigé par des femmes", "Région de Peel", "Porté par des bénévoles", "Adapté aux cultures", "La dignité d’abord"],
+    alt0: "Bénévoles de Crowned Women emballant des boîtes de nourriture",
+    alt1: "Nourriture triée, prête à être partagée",
+    alt2: "Une bénévole prépare des provisions pour les familles",
+    alt3: "Étagères de dons alimentaires à la banque alimentaire",
+    alt4: "Bénévoles à l’œuvre pendant une journée de distribution",
+    howTitle: "Comment fonctionne la banque alimentaire",
+    steps: [
+      { title: "Collecter", text: "Nous rassemblons la nourriture grâce aux dons de la communauté, à nos partenaires et à des achats réfléchis, en privilégiant les aliments frais et familiers." },
+      { title: "Trier et emballer", text: "Des bénévoles formés vérifient, trient et emballent chaque boîte pour qu’elle soit sûre, équilibrée et prête le jour de la distribution." },
+      { title: "Partager dans la dignité", text: "Les familles sont accueillies par leur nom, pas par un numéro. Personne ne repart jugé, ni les mains vides." },
+      { title: "Relier", text: "Chaque visite permet d’orienter les femmes et les familles vers le counseling, le mentorat, les services aux nouveaux arrivants et notre programme C-Girls." }
+    ],
+    fundTitle: "Ce que votre soutien rend possible",
+    fund: [
+      { title: "Plus de nourriture sur plus de tables", text: "L’achat de denrées de base, de produits frais et d’aliments culturellement familiers, pour que les familles reçoivent ce qu’elles mangent vraiment." },
+      { title: "Entreposage et transport sûrs", text: "Des étagères, de la réfrigération et du transport pour accepter plus de dons et rejoindre les familles qui ne peuvent pas se déplacer." },
+      { title: "Une équipe de bénévoles formée", text: "La formation en salubrité alimentaire, la coordination et le matériel des bénévoles qui font vivre chaque journée de distribution." },
+      { title: "La porte vers tout le reste", text: "Le temps du personnel qui transforme une visite alimentaire en counseling, en mentorat et en aide concrète pour toute la famille." }
+    ],
+    directorStamp: "Direction",
+    directorRole: "Directrice générale, Crowned Women and Family Community Services",
+    directorAlt: "Marita, directrice générale de Crowned Women and Family Community Services",
+    directorText: "Marita dirige la banque alimentaire et l’équipe qui la fait vivre. Écoutez-la expliquer pourquoi ce travail compte, et à qui il s’adresse.",
+    directorCta: "Voir son mot de bienvenue",
+    receiveTitle: "Ce que reçoivent nos bailleurs et partenaires",
+    receive: [
+      "Des nouvelles régulières sur les familles servies et la nourriture distribuée",
+      "Des photos et vidéos du travail que vous financez",
+      "Des rapports financiers et des reçus sur demande",
+      "Une reconnaissance sur notre site et lors de nos événements"
+    ],
+    ctaLine: "Devenez partenaire pour garder les tablettes [[pleines]], toute l’année.",
+    ctaFund: "Financer la banque alimentaire",
+    ctaPackage: "Demander notre dossier de financement",
+    packageSubject: "Demande de dossier de financement — banque alimentaire"
+  },
   films: {
     stamp: "Banque alimentaire · En images",
     title: "Nourriture, dignité et||[[communauté]] sur chaque tablette.",

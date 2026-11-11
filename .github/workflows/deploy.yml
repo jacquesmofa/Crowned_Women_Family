@@ -1,11 +1,11 @@
 # CWFCS — Build the React site and upload it to HostGator on every push to main.
 # Needs 3 repository secrets (Settings > Secrets and variables > Actions):
-#   FTP_SERVER    HostGator FTP host only, no "ftp://" and no slash, e.g. ftp.yourdomain.org
-#                 or the server IP shown in cPanel > "FTP Accounts" > Configure FTP Client
+#   FTP_SERVER    exactly: gator3095.hostgator.com   (no "ftp://", no slash)
 #   FTP_USERNAME  the full FTP user, e.g. deploy@yourdomain.org (or the cPanel username)
 #   FTP_PASSWORD  that account's password
 # Optional repository VARIABLE (same page, "Variables" tab):
-#   FTP_SERVER_DIR  folder on the server, ending with "/". Default "/crowned.org/".
+#   FTP_SERVER_DIR  folder on the server, ending with "/". Default "/crownedwomenandfamilycommunityservices.org/"
+#                   (the live site's folder in cPanel > Domains).
 #                   If the FTP account was created pointing straight at the site folder, use "./"
 name: Automated HostGator Deployment Pipeline
 
@@ -39,6 +39,13 @@ jobs:
           npm ci --no-audit --no-fund
           npm run build
 
+      - name: Check FTP settings before uploading
+        env:
+          S: ${{ secrets.FTP_SERVER }}
+        run: |
+          case "$S" in ""|*://*|*/*|*" "*) echo "::error::Secret FTP_SERVER must be exactly gator3095.hostgator.com (no ftp://, no slash, no spaces)"; exit 1;; esac
+          getent hosts "$S" >/dev/null || { echo "::error::FTP_SERVER is not a real server name (${#S} characters). Set it to exactly: gator3095.hostgator.com"; exit 1; }
+
       # The Vite build writes the finished website to ./out (build.outDir in vite.config.ts).
       - name: Deploy static files to HostGator
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -49,7 +56,7 @@ jobs:
           port: 21
           protocol: ftp
           local-dir: ./out/
-          server-dir: ${{ vars.FTP_SERVER_DIR || '/crowned.org/' }}
+          server-dir: ${{ vars.FTP_SERVER_DIR || '/crownedwomenandfamilycommunityservices.org/' }}
           timeout: 120000
           # Source maps are for debugging only; keep them off the live server.
           exclude: |
@@ -57,3 +64,12 @@ jobs:
             **/.git*/**
             **/node_modules/**
             **/*.map
+
+      - name: Check the new version is live
+        run: |
+          ASSET=$(grep -o 'assets/index-[^"]*\.js' out/index.html | head -1)
+          for i in 1 2 3 4 5 6; do
+            curl -fsSL "https://crownedwomenandfamilycommunityservices.org/?v=${GITHUB_SHA::7}" | grep -q "$ASSET" && { echo "✅ live: $ASSET"; exit 0; }
+            sleep 10
+          done
+          echo "::warning::Uploaded, but the live site does not show this build yet. Check FTP_SERVER_DIR points at the site folder."

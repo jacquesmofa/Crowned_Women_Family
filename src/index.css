@@ -242,3 +242,44 @@ textarea.input { min-height: 120px; resize: vertical; }
 .reel-title { font-size: 15px; font-weight: 500; line-height: 1.35; }
 @media (max-width: 1023px) { .reel-item { grid-template-columns: minmax(0, 1fr); height: 100%; align-content: start; } }
 @media (prefers-reduced-motion: reduce) { .reel-item, .reel-item:hover { transition: none; transform: none; } }
+
+/* ---------- Food Pantry (funders & partners) ---------- */
+.pantry { position: relative; background: color-mix(in srgb, var(--bg) 92%, #000); padding: clamp(80px, 12vh, 140px) 20px; overflow: clip; }
+.pantry-inner { max-width: 1280px; margin: 0 auto; display: grid; gap: clamp(40px, 6vw, 72px); }
+.pantry-head { display: grid; gap: 14px; max-width: 820px; }
+.pantry-head h2 { font-size: clamp(32px, 5.4vw, 72px); line-height: 1.02; letter-spacing: -.03em; font-weight: 600; margin: 0; }
+.pantry-head .sub { font-size: clamp(15px, 1.35vw, 19px); line-height: 1.65; margin: 0; color: color-mix(in srgb, var(--text) 86%, transparent); max-width: 64ch; }
+.pantry-facts { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.pantry-facts li { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); font-family: var(--font-label); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.pantry-mosaic { display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pantry-mosaic img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; display: block; aspect-ratio: 4 / 3; }
+.pantry-mosaic .m-a { grid-column: span 2; aspect-ratio: 16 / 11; }
+@media (min-width: 900px) {
+  .pantry-mosaic { grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: repeat(2, minmax(0, 220px)); }
+  .pantry-mosaic .m-a { grid-column: 1; grid-row: 1 / span 2; aspect-ratio: auto; }
+  .pantry-mosaic img { aspect-ratio: auto; }
+}
+.pantry-h3 { font-size: clamp(22px, 2.2vw, 30px); font-weight: 600; letter-spacing: -.01em; margin: 0 0 18px; }
+.pantry-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.pantry-steps li { padding: 22px; display: grid; gap: 8px; }
+.pantry-steps .idx { font-family: var(--font-label); font-size: 12px; letter-spacing: .14em; color: var(--accent2); }
+.pantry-steps strong { font-size: 19px; font-weight: 600; }
+.pantry-steps p { margin: 0; color: color-mix(in srgb, var(--text) 80%, transparent); font-size: 15px; line-height: 1.6; }
+.pantry-split { display: grid; gap: 28px; align-items: start; }
+@media (min-width: 1024px) { .pantry-split { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 40px; } }
+.pantry-fund { list-style: none; margin: 0; padding: 0; display: grid; }
+.pantry-fund li { display: grid; gap: 4px; padding: 18px 0; border-top: 1px solid color-mix(in srgb, var(--text) 14%, transparent); }
+.pantry-fund li strong { font-size: 18px; font-weight: 600; color: var(--accent); }
+.pantry-fund li span { color: color-mix(in srgb, var(--text) 82%, transparent); line-height: 1.6; }
+.pantry-director { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 20px; padding: 20px; align-items: start; }
+.pantry-director img { width: 132px; height: 165px; object-fit: cover; border-radius: 14px; }
+.pantry-director-name { margin: 6px 0 0; font-family: var(--font-accent); font-style: italic; font-size: 30px; line-height: 1.1; color: var(--accent); }
+.pantry-director-role { margin: 4px 0 10px; font-size: 13px; color: var(--muted); }
+.pantry-director-text { margin: 0 0 12px; line-height: 1.6; font-size: 15px; }
+.pantry-partner { display: grid; gap: 28px; padding: clamp(22px, 3vw, 40px); }
+@media (min-width: 1024px) { .pantry-partner { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: center; } }
+.pantry-receive { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.pantry-receive li { display: flex; gap: 10px; line-height: 1.55; }
+.pantry-receive i { color: var(--accent); margin-top: 2px; }
+.pantry-cta { display: grid; gap: 18px; }
+.pantry-cta-line { margin: 0; font-size: clamp(20px, 2vw, 28px); line-height: 1.3; font-weight: 500; }

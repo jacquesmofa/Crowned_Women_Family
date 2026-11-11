@@ -1,44 +1,35 @@
 {
-  "_help": "Videos are hosted on Mux (dashboard.mux.com). To add or swap a video: upload it in Mux, open the asset > 'Playback and Thumbnails', copy the PUBLIC Playback ID (not the Asset ID) into playbackId. The first video in the list is the one shown first. thumbnailTime = the second used as the cover picture. Mux Free plan: 10 videos max.",
+  "_help": "Videos are hosted on Mux (dashboard.mux.com). To add or swap a video: upload it in Mux, open the asset > 'Playback and Thumbnails', copy the PUBLIC Playback ID (not the Asset ID) into playbackId. The first video in the list is the one shown first. thumbnailTime = the second used as the cover picture. Mux Free plan: 10 videos max. Account: Crowned Women and Family Community Services (their own Mux account, created 11 Nov 2026). 'hero' is the silent looping film at the top of the home page.",
+  "hero": {
+    "playbackId": "FQ9pNK5q8bURx01kcd01WhZCavIsWSuSZxxLYRFW4j1aE",
+    "coverTime": 8,
+    "title": "Crowned Women Food Pantry: Director and volunteers"
+  },
   "items": [
     {
-      "playbackId": "BLeB7TNIDI5tmr00zYzcqGZGh1pXHbrckI2Mb99gyKPM",
+      "playbackId": "FQ9pNK5q8bURx01kcd01WhZCavIsWSuSZxxLYRFW4j1aE",
       "duration": "1:25",
       "thumbnailTime": 8,
-      "title": { "en": "Inside our Food Pantry", "fr": "Au cœur de notre banque alimentaire" },
+      "title": {
+        "en": "Inside our Food Pantry",
+        "fr": "Au cœur de notre banque alimentaire"
+      },
       "blurb": {
-        "en": "The full story: how volunteers sort, pack and share food with families across the Peel Region.",
-        "fr": "Toute l’histoire : comment nos bénévoles trient, emballent et partagent la nourriture avec les familles de la région de Peel."
+        "en": "Our Executive Director and volunteers at work: how food is sorted, packed and shared with families across the Peel Region.",
+        "fr": "Notre directrice générale et nos bénévoles à l’œuvre : comment la nourriture est triée, emballée et partagée avec les familles de la région de Peel."
       }
     },
     {
-      "playbackId": "EWrIvd6j9GIGmxkjJq2aR18muKoYjL358kH8ovpEV01o",
-      "duration": "0:30",
-      "thumbnailTime": 15,
-      "title": { "en": "A welcome from our Executive Director", "fr": "Le mot de bienvenue de notre directrice générale" },
+      "playbackId": "013KSL32PPO9kweKT02qROBitoLdJeV0202MeaYLS17ovFE",
+      "duration": "0:46",
+      "thumbnailTime": 10,
+      "title": {
+        "en": "A welcome from our Executive Director",
+        "fr": "Le mot de bienvenue de notre directrice générale"
+      },
       "blurb": {
         "en": "Why the Food Pantry matters, and who it is for.",
         "fr": "Pourquoi la banque alimentaire compte, et à qui elle s’adresse."
-      }
-    },
-    {
-      "playbackId": "EoowEPCTGrR6M4pBLmfN82LzmdIue4e96zZN87HpTSc",
-      "duration": "0:45",
-      "thumbnailTime": 6,
-      "title": { "en": "Volunteers at work", "fr": "Nos bénévoles à l’œuvre" },
-      "blurb": {
-        "en": "Hands in, boxes up: a pantry day with the Crowned Women team.",
-        "fr": "On se retrousse les manches : une journée à la banque alimentaire avec l’équipe Crowned Women."
-      }
-    },
-    {
-      "playbackId": "SuuixT8M9zFvyw01nFsny0100GVcKjivHmSO279DmEJw4c",
-      "duration": "0:28",
-      "thumbnailTime": 10,
-      "title": { "en": "What goes into every box", "fr": "Ce que contient chaque boîte" },
-      "blurb": {
-        "en": "Our Executive Director walks through the food we share each week.",
-        "fr": "Notre directrice générale présente les aliments que nous partageons chaque semaine."
       }
     }
   ]

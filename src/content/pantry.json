@@ -1,0 +1,14 @@
+{
+  "_help": "Photos for the Food Pantry section on the home page (Cloudinary). Text lives in src/i18n/local/<lang>/common.ts under 'pantry'.",
+  "director": {
+    "name": "Marita",
+    "photo": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794429501/Marita_Ex_Dir_w2dmin.jpg"
+  },
+  "photos": [
+    "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.30_1_u01zff.jpg",
+    "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179139/WhatsApp_Image_2026-11-08_at_17.49.30_qdw1hk.jpg",
+    "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_1_qhwznh.jpg",
+    "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179135/WhatsApp_Image_2026-11-08_at_17.49.30_4_oq0m2q.jpg",
+    "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_4_ae71yl.jpg"
+  ]
+}

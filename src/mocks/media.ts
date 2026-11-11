@@ -1,6 +1,10 @@
-// Media for the site. Video + cover come from the client's film; panel pictures are swappable placeholders.
-export const VIDEO_SRC = 'https://storage.helloreaddy.io/project_files/27a0af0f-d17a-4baf-b254-ae6dffe83320/b9cd8963-8f39-4add-9c9d-31fc27ba4798_scrub.mp4';
-export const VIDEO_COVER = 'https://v3b.fal.media/files/b/0ab11380/tLeOEazDEktsp70-GavnW_BBdgPEG6.jpg';
+import videos from '@/content/videos.json';
+
+// Home hero film: silent, looping, from Crowned Women's own Mux account (public Playback ID, set in src/content/videos.json → hero).
+export const HERO_PLAYBACK_ID = videos.hero.playbackId;
+export const HERO_COVER = `https://image.mux.com/${HERO_PLAYBACK_ID}/thumbnail.webp?width=1920&time=${videos.hero.coverTime}`;
+/** HLS stream capped at 720p: plenty for a background and light on data. */
+export const heroStream = () => `https://stream.mux.com/${HERO_PLAYBACK_ID}.m3u8?max_resolution=720p`;
 
 export const IMG = {
   programs: 'https://readdy.ai/api/search-image?query=Warm%20candlelit%20community%20hall%20at%20winter%20dusk%20with%20diverse%20Black%20and%20newcomer%20women%20in%20a%20mentorship%20circle%20seated%20in%20the%20left%20third%20of%20the%20frame%2C%20right%20half%20calm%20dark%20wood%20wall%20in%20soft%20shadow%2C%20golden%20amber%20light%2C%20deep%20brown%20plum%20tones%2C%20cinematic%20wide%20shot&width=2400&height=1350&seq=cw-programs-01&orientation=landscape',

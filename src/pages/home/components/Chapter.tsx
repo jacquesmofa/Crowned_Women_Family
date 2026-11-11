@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import useTx from '@/hooks/useTx';
-import { VIDEO_SRC, VIDEO_COVER } from '@/mocks/media';
+import { HERO_PLAYBACK_ID, HERO_COVER, heroStream } from '@/mocks/media';
 import { fmt } from '@/components/base/Rich';
 
 interface Beat { stamp: string; lines: string[]; sub?: string; cta?: string; points?: string[] }
@@ -41,7 +41,7 @@ export default function Chapter() {
       el: b, from: parseFloat(b.dataset.from || '0'), to: parseFloat(b.dataset.to || '1'),
       parts: [...b.children] as Part[], lines: [...b.querySelectorAll<HTMLElement>('.line-in')],
     }));
-    const c = { video: null as HTMLVideoElement | null, current: 0, rolling: false };
+    const c = { video: null as HTMLVideoElement | null, current: 0, hls: null as null | { destroy: () => void } };
     let alive = true;
 
     const afterLCP = new Promise<void>((res) => {
@@ -51,45 +51,47 @@ export default function Chapter() {
       else setTimeout(res, 300);
     }));
 
+    // Hero film: the real Food Pantry film from Crowned Women's own Mux account, silent and looping forever.
+    // It plays continuously (not tied to scrolling) and pauses only while far off-screen, to save data.
     const detach = () => {
       if (!c.video) return;
       stage.classList.remove('is-live');
+      c.hls?.destroy(); c.hls = null;
       c.video.removeAttribute('src'); c.video.load(); c.video.remove(); c.video = null;
     };
-    const warmUp = (v: HTMLVideoElement) => {
-      const roll = () => {
-        if (c.video !== v || c.rolling || v.readyState >= 2) return;
-        c.rolling = true; v.loop = true;
-        v.play().catch(() => { el.classList.add('is-static'); detach(); });
-      };
-      const started = v.play();
-      if (started && started.then) started.then(() => { if (!c.rolling) v.pause(); }).catch(roll);
-      setTimeout(roll, 4000);
-    };
+    const play = (v: HTMLVideoElement) => { v.play().catch(() => { /* autoplay refused: the still cover stays */ }); };
     const attach = async () => {
-      if (c.video) return;
+      if (c.video) { play(c.video); return; }
       await afterLCP;
       if (!alive || c.video || !el.isConnected) return;
       const v = document.createElement('video');
-      v.muted = true; v.playsInline = true; v.preload = 'auto';
+      v.muted = true; v.defaultMuted = true; v.loop = true; v.autoplay = true; v.playsInline = true; v.preload = 'auto';
       v.disablePictureInPicture = true; v.tabIndex = -1;
-      v.setAttribute('aria-hidden', 'true'); v.setAttribute('playsinline', '');
-      v.src = VIDEO_SRC;
-      v.addEventListener('loadeddata', () => stage.classList.add('is-live'), { once: true });
+      v.setAttribute('aria-hidden', 'true'); v.setAttribute('playsinline', ''); v.setAttribute('muted', '');
+      v.poster = HERO_COVER;
+      v.addEventListener('playing', () => stage.classList.add('is-live'), { once: true });
       stage.insertBefore(v, stage.querySelector('.veil'));
       c.video = v;
-      if (TOUCH) warmUp(v);
+      const src = heroStream();
+      if (v.canPlayType('application/vnd.apple.mpegurl')) {
+        v.src = src; play(v);
+      } else {
+        const { default: Hls } = await import('hls.js');
+        if (!alive || c.video !== v) return;
+        if (Hls.isSupported()) {
+          const hls = new Hls({ capLevelToPlayerSize: true, startLevel: -1 });
+          c.hls = hls;
+          hls.loadSource(src); hls.attachMedia(v);
+          hls.on(Hls.Events.MANIFEST_PARSED, () => play(v));
+        } else { el.classList.add('is-static'); detach(); }
+      }
     };
+    const pause = () => { c.video?.pause(); };
 
     const near = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) attach(); }), { rootMargin: '120% 0px' });
-    const far = new IntersectionObserver((es) => es.forEach((e) => { if (!e.isIntersecting) detach(); }), { rootMargin: '260% 0px' });
+    const far = new IntersectionObserver((es) => es.forEach((e) => { if (!e.isIntersecting) pause(); }), { rootMargin: '260% 0px' });
     near.observe(el); far.observe(el);
 
-    const applyVideo = (v: HTMLVideoElement | null, t: number) => {
-      if (!v || !Number.isFinite(v.duration) || v.seeking) return;
-      if (Math.abs(v.currentTime - t) < EPS) return;
-      v.currentTime = t;
-    };
     const progressOf = () => {
       const r = el.getBoundingClientRect();
       const travel = r.height - innerHeight;
@@ -139,14 +141,11 @@ export default function Chapter() {
 
     let raf = 0;
     const tick = () => {
-      const out = c.video && !c.rolling ? (c.video.duration || 0) : 0;
-      const span = Math.max(0, out);
-      glide(span);
+      glide(0);
       const r = el.getBoundingClientRect();
       if (r.top < innerHeight * 0.5 && r.bottom > innerHeight * 0.5) {
         applyBeats();
         el.style.setProperty('--t', clamp01(c.current).toFixed(4));
-        if (span > 0) applyVideo(c.video, c.current * span);
       }
       raf = requestAnimationFrame(tick);
     };
@@ -168,8 +167,8 @@ export default function Chapter() {
   return (
     <section ref={ref} className="chapter" data-label="Crowned Women film" aria-label="Crowned Women and Family Community Services introduction" style={{ ['--beat-count' as string]: 5 }}>
       <div className="stage">
-        <img className="plate" src={VIDEO_COVER} width={1920} height={1080} fetchPriority="high" decoding="async"
-          alt="A woman in a winter coat opens the brass door of a brick community building in Mississauga at dusk, as women gather in the warm entrance hall inside." />
+        <img className="plate" src={HERO_COVER} width={1920} height={1080} fetchPriority="high" decoding="async"
+          alt="Crowned Women volunteers sorting and packing food at the community food pantry." data-playback={HERO_PLAYBACK_ID} />
         <div className="veil" aria-hidden="true" />
         <div className="veil veil-light" aria-hidden="true" />
         {beats.map((b, i) => {

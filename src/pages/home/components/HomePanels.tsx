@@ -6,6 +6,7 @@ import InquiryForm, { SERVICE_KEYS } from '@/components/feature/forms/InquiryFor
 import { EMAIL } from '@/components/feature/forms/FormBits';
 import { IMG } from '@/mocks/media';
 import VideoReel from '@/components/feature/VideoReel';
+import FoodPantry from '@/components/feature/FoodPantry';
 
 interface Program { title: string; summary: string }
 interface Testimonial { quote: string; name: string; role: string }
@@ -80,6 +81,8 @@ export default function HomePanels() {
           ))}
         </div>
       </Panel>
+
+      <FoodPantry />
 
       <VideoReel />
 
