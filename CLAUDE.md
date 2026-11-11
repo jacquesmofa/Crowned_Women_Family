@@ -2,8 +2,8 @@
 
 Women-led, culturally responsive non-profit in the Peel Region (women, families, community).
 
-- Live domain: crowned.org (assumed in src/seo/site.ts; confirm)
-- Host: HostGator
+- Live domain: ❓ unconfirmed. `src/seo/site.ts` assumes https://crowned.org, but crowned.org is NOT on the HostGator account. The HostGator site folder is `/crownedwomenandfamilycommunityservices.org`.
+- Host: HostGator (server `gator3095.hostgator.com`, cPanel user `irineashu`)
 - Design and audience: see `brand-dna.md`. Placeholders: `PLACEHOLDERS.md` (create it when you find one).
 
 ## Studio rules (Jacques' web studio: apply to every task)
@@ -22,7 +22,7 @@ Women-led, culturally responsive non-profit in the Peel Region (women, families,
 - Routes: `/`, `/404`, `/about`, `/cgirls`, `/contact`, `/events`, `/get-involved`, `/partners`, `/services`.
 
 ## Deploy
-- `.github/workflows/deploy.yml`: push to `main` → build → FTP upload to `vars.FTP_SERVER_DIR` (default `/crowned.org/`). **FTP step failing since 4 Nov** ("Failed to connect / Timeout"): the `FTP_SERVER` secret is wrong or unreachable. Owner must fix the secret (host name only, no `ftp://`). Manual "Run workflow" button exists.
+- `.github/workflows/deploy.yml`: push to `main` → build → FTP upload to `vars.FTP_SERVER_DIR` (default `/crowned.org/`). **FTP step failing since 4 Nov** ("Failed to connect / Timeout"). Fix: secret `FTP_SERVER` = `gator3095.hostgator.com` (host only, no `ftp://`), and repo variable `FTP_SERVER_DIR` = `/crownedwomenandfamilycommunityservices.org/` (not `/crowned.org/`). Better: move to the studio standard workflow (copy `jacquesmofa/SANKOFA/.github/workflows/deploy.yml`: FTPS, one FTP account per site, preview/production switch, live check). Manual "Run workflow" button exists.
 
 ## Where things live
 - Pages: `src/pages/<page>/` (one folder per page, sections in `components/`). Routes: `src/router/`.
