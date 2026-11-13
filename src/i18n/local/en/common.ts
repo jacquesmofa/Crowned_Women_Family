@@ -1,6 +1,7 @@
 // Central English dictionary for the whole site.
 const en = {
   meta: {
+    gallery: ["Gallery | Crowned Women and Family Community Services", "Photos from the Crowned Women Food Pantry and our community in Mississauga and the Peel Region."],
     home: ["Crowned Women and Family Community Services | Peel Region", "Crowned Women and Family Community Services: a women-led, culturally responsive non-profit empowering women, strengthening families and building community across the Peel Region."],
     about: ["About Us | Crowned Women and Family Community Services", "The story, values and leadership of Crowned Women and Family Community Services, a women-led, culturally responsive non-profit serving women and families across the Peel Region."],
     services: ["Programs & Services | Crowned Women and Family Community Services", "Family counseling, youth mentorship, newcomer support, Shine Her Light, board readiness training and CGIRLS: culturally responsive programs across the Peel Region."],
@@ -12,7 +13,7 @@ const en = {
     notFound: ["Page Not Found | Crowned Women and Family Community Services", "The page you are looking for could not be found. Return to the Crowned Women and Family Community Services home page."],
   },
   nav: {
-    home: "Home", about: "About", services: "Services", cgirls: "CGIRLS", events: "Events",
+    home: "Home", gallery: "Gallery", about: "About", services: "Services", cgirls: "CGIRLS", events: "Events",
     partners: "Partners", involved: "Get Involved", contact: "Contact", donate: "Donate",
     menu: "Open menu", close: "Close menu", skip: "Skip to content", lang: "Switch language to French",
   },
@@ -219,6 +220,7 @@ const en = {
     rights: "© 2026 Crowned Women and Family Community Services (CWFCS). All rights reserved.",
     charity: "[Registered charity number: to be added]", line: "Every woman carries a [[light]].",
   },
+  gallery: { stamp: "Gallery", title: "Moments from our [[community]].", sub: "Real photos from our food pantry and programs. Tap any photo to see it full size.", cta: "Volunteer with us" },
   notFound: { title: "This door leads [[nowhere]].", sub: "The page you are looking for could not be found." },
   tagline: "Empowering Women. Strengthening Families. Building Community.",
 };

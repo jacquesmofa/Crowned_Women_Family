@@ -6,7 +6,7 @@ import { SITE } from '@/seo/site';
 
 export const NAV = [
   { to: '/', key: 'home' }, { to: '/about', key: 'about' }, { to: '/services', key: 'services' }, { to: '/cgirls', key: 'cgirls' },
-  { to: '/events', key: 'events' }, { to: '/partners', key: 'partners' }, { to: '/get-involved', key: 'involved' }, { to: '/contact', key: 'contact' },
+  { to: '/events', key: 'events' }, { to: '/partners', key: 'partners' }, { to: '/get-involved', key: 'involved' }, { to: '/gallery', key: 'gallery' }, { to: '/contact', key: 'contact' },
 ];
 
 export function LangToggle({ small }: { small?: boolean }) {

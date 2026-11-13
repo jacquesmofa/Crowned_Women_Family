@@ -51,6 +51,13 @@
       "imageAlt": "A smiling volunteer at the Crowned Women Food Pantry"
     },
     {
+      "path": "/gallery",
+      "title": "Gallery | Crowned Women and Family Community Services",
+      "description": "Photos from the Crowned Women Food Pantry and our community in Mississauga and the Peel Region.",
+      "image": "https://res.cloudinary.com/hxhakwbe/image/upload/c_fill,g_auto,w_1200,h_630,q_auto:good,f_jpg/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_1_qhwznh.jpg",
+      "imageAlt": "Volunteers sorting groceries at the Crowned Women Food Pantry"
+    },
+    {
       "path": "/contact",
       "title": "Contact Us | Crowned Women and Family Community Services",
       "description": "Get in touch with Crowned Women and Family Community Services, 6850 Milcreek Drive, Mississauga, serving the Peel Region. Send a service inquiry today."

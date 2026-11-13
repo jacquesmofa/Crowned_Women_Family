@@ -1,0 +1,54 @@
+{
+  "albums": [
+    {
+      "slug": "food-pantry",
+      "title": "Community Food Pantry",
+      "description": "Volunteers and families at the Crowned Women Food Pantry in Mississauga.",
+      "alt": "Crowned Women Food Pantry, volunteers and families",
+      "photos": [
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179133/WhatsApp_Image_2026-11-08_at_17.49.09_1_la8upq.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179139/WhatsApp_Image_2026-11-08_at_17.49.30_qdw1hk.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179136/WhatsApp_Image_2026-11-08_at_17.49.30_5_ja8ksz.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179135/WhatsApp_Image_2026-11-08_at_17.49.30_4_oq0m2q.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_bhoyet.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.30_1_u01zff.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.30_2_bndl2x.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_5_hbmd5j.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.30_3_lc1cbx.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_1_qhwznh.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_2_cl2xrl.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_4_ae71yl.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179134/WhatsApp_Image_2026-11-08_at_17.49.09_vjgxix.jpg"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179133/WhatsApp_Image_2026-11-08_at_17.49.10_3_yu5zxm.jpg"
+        }
+      ]
+    }
+  ]
+}

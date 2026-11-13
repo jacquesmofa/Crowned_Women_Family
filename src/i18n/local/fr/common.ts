@@ -1,6 +1,7 @@
 // Dictionnaire français central du site (français canadien).
 const fr = {
   meta: {
+    gallery: ["Galerie | Crowned Women and Family Community Services", "Photos de la banque alimentaire Crowned Women et de notre communauté à Mississauga et dans la région de Peel."],
     home: ["Crowned Women and Family Community Services | Région de Peel", "Crowned Women and Family Community Services : un organisme à but non lucratif dirigé par des femmes, culturellement adapté, qui autonomise les femmes, renforce les familles et bâtit la communauté dans toute la région de Peel."],
     about: ["À propos | Crowned Women and Family Community Services", "L’histoire, les valeurs et l’équipe de Crowned Women and Family Community Services, un organisme dirigé par des femmes au service des femmes et des familles de toute la région de Peel."],
     services: ["Programmes et services | Crowned Women and Family Community Services", "Counseling familial, mentorat jeunesse, soutien aux nouveaux arrivants, Shine Her Light, préparation aux conseils et CGIRLS : des programmes culturellement adaptés dans la région de Peel."],
@@ -12,7 +13,7 @@ const fr = {
     notFound: ["Page introuvable | Crowned Women and Family Community Services", "La page que vous cherchez est introuvable. Retournez à l’accueil de Crowned Women and Family Community Services."],
   },
   nav: {
-    home: "Accueil", about: "À propos", services: "Services", cgirls: "CGIRLS", events: "Événements",
+    home: "Accueil", gallery: "Galerie", about: "À propos", services: "Services", cgirls: "CGIRLS", events: "Événements",
     partners: "Partenaires", involved: "S’impliquer", contact: "Contactez-nous", donate: "Faire un don",
     menu: "Ouvrir le menu", close: "Fermer le menu", skip: "Passer au contenu", lang: "Passer à l’anglais",
   },
@@ -219,6 +220,7 @@ const fr = {
     rights: "© 2026 Crowned Women and Family Community Services (CWFCS). Tous droits réservés.",
     charity: "[Numéro d’organisme de bienfaisance enregistré : à ajouter]", line: "Chaque femme porte une [[lumière]].",
   },
+  gallery: { stamp: "Galerie", title: "Moments de notre [[communauté]].", sub: "De vraies photos de notre banque alimentaire et de nos programmes. Touchez une photo pour l’agrandir.", cta: "Devenir bénévole" },
   notFound: { title: "Cette porte ne mène [[nulle part]].", sub: "La page que vous cherchez est introuvable." },
   tagline: "Autonomiser les femmes. Renforcer les familles. Bâtir la communauté.",
 };

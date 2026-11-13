@@ -9,6 +9,7 @@ import Events from "@/pages/events/page";
 import Partners from "@/pages/partners/page";
 import GetInvolved from "@/pages/get-involved/page";
 import Contact from "@/pages/contact/page";
+import Gallery from "@/pages/gallery/page";
 
 const routes: RouteObject[] = [
   {
@@ -22,6 +23,7 @@ const routes: RouteObject[] = [
       { path: "events", element: <Events /> },
       { path: "partners", element: <Partners /> },
       { path: "get-involved", element: <GetInvolved /> },
+      { path: "gallery", element: <Gallery /> },
       { path: "contact", element: <Contact /> },
       { path: "*", element: <NotFound /> },
     ],

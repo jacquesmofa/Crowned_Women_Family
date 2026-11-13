@@ -68,6 +68,7 @@ export const PAGES: Record<string, PageSeo> = {
   events: { path: '/events', type: 'CollectionPage', robots: INDEXABLE, priority: '0.7' },
   partners: { path: '/partners', type: 'CollectionPage', robots: INDEXABLE, priority: '0.7' },
   involved: { path: '/get-involved', image: photo('v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_4_ae71yl'), imageAlt: 'A smiling volunteer at the Crowned Women Food Pantry', type: 'WebPage', robots: INDEXABLE, priority: '0.8' },
+  gallery: { path: '/gallery', image: photo('v1794179134/WhatsApp_Image_2026-11-08_at_17.49.10_1_qhwznh'), imageAlt: 'Volunteers sorting groceries at the Crowned Women Food Pantry', type: 'CollectionPage', robots: INDEXABLE, priority: '0.7' },
   contact: { path: '/contact', type: 'ContactPage', robots: INDEXABLE, priority: '0.8' },
   notFound: { path: '/404', type: 'WebPage', robots: 'noindex, follow', priority: '0' },
 };
