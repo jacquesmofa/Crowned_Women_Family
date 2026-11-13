@@ -7,7 +7,7 @@ import SiteGallery from '@/components/feature/SiteGallery';
 // Gallery: real photos from src/content/gallery.json, in the site's warm brown + amber palette.
 export default function Gallery() {
   usePageMeta('gallery');
-  const { s } = useTx();
+  const { s, lang } = useTx();
   return (
     <div style={{ background: 'var(--bg)', color: 'var(--text)' }}>
       <section className="px-6 pt-36 pb-14 md:pt-44 md:pb-20">
@@ -20,6 +20,7 @@ export default function Gallery() {
       <section className="px-4 md:px-6 pb-20">
         <div className="max-w-[1300px] mx-auto">
           <SiteGallery
+            lang={lang}
             theme={{
               layout: 'masonry',
               ink: 'var(--text)',

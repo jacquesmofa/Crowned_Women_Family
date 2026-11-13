@@ -3,8 +3,11 @@
     {
       "slug": "food-pantry",
       "title": "Community Food Pantry",
+      "title_fr": "Banque alimentaire communautaire",
       "description": "Volunteers and families at the Crowned Women Food Pantry in Mississauga.",
+      "description_fr": "Bénévoles et familles à la banque alimentaire Crowned Women, à Mississauga.",
       "alt": "Crowned Women Food Pantry, volunteers and families",
+      "alt_fr": "Banque alimentaire Crowned Women, bénévoles et familles",
       "photos": [
         {
           "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1794179133/WhatsApp_Image_2026-11-08_at_17.49.09_1_la8upq.jpg"
