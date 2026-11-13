@@ -9,7 +9,6 @@ import VideoReel from '@/components/feature/VideoReel';
 import FoodPantry from '@/components/feature/FoodPantry';
 
 interface Program { title: string; summary: string }
-interface Testimonial { quote: string; name: string; role: string }
 interface EventItem { id: string; day: string; month: string; title: string; venue: string; type: string }
 
 /** Manifesto words: *word* marks an italic-serif accent. Rendered as spans so React owns the DOM. */
@@ -30,7 +29,6 @@ function Manifesto({ text }: { text: string }) {
 export default function HomePanels() {
   const { s, o } = useTx();
   const programs = o<Program[]>('programs');
-  const voices = o<Testimonial[]>('testimonials');
   const events = o<EventItem[]>('events.list');
 
   return (
@@ -64,22 +62,6 @@ export default function HomePanels() {
         <Rich as="h2" html={s('home.cgirlsTitle')} data-reveal />
         <p className="sub" data-reveal>{s('home.cgirlsSub')}</p>
         <div data-reveal><Link to="/cgirls" className="btn btn-gold">{s('common.exploreCgirls')} <i className="ri-arrow-right-line" /></Link></div>
-      </Panel>
-
-      <Panel id="voices" side="bottom" img={IMG.voices} alt="Women of several generations embracing in a warm community room" wide>
-        <p className="stamp" data-reveal>{s('home.voicesStamp')}</p>
-        <Rich as="h2" html={s('home.voicesTitle')} data-reveal />
-        {/* CONTENT: confirm with client before launch */}
-        <div className="flex md:grid md:grid-cols-3 gap-4 md:gap-5 mt-4 overflow-x-auto snap-x snap-mandatory pb-2 w-full text-left">
-          {voices.map((v) => (
-            <figure key={v.name} className="card p-6 md:p-7 m-0 min-w-[82%] sm:min-w-[60%] md:min-w-0 snap-start" data-reveal>
-              <span className="block text-6xl leading-none h-10" style={{ color: 'var(--accent)', fontFamily: 'var(--font-accent)' }}>“</span>
-              <blockquote className="m-0 text-[15px] md:text-base leading-relaxed">{v.quote}</blockquote>
-              <figcaption className="mt-5 text-sm"><strong className="font-semibold">{v.name}</strong><span style={{ color: 'var(--muted)' }}> · {v.role}</span></figcaption>
-              <span className="gold-line" />
-            </figure>
-          ))}
-        </div>
       </Panel>
 
       <FoodPantry />

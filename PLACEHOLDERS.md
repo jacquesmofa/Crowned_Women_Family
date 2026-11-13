@@ -8,3 +8,9 @@
 ## Share previews (11 Nov 2026)
 - [ ] Confirm https://crownedwomenandfamilycommunityservices.org is the official address. If the client owns crowned.org (or another short domain), point it here with a redirect.
 - [ ] No social media accounts are listed in the site's structured data yet: add them (`sameAs`) once confirmed.
+
+## Removed 13 Nov 2026
+- Home page "voices" testimonials (Sarah M., Maya L., Elena R.) were marked "confirm with client before launch" and the same quotes appear in another client's template, so they were taken off the live site. The text is still in `src/i18n/local/*/common.ts` under `testimonials`: put the panel back only with real quotes the women agreed to share.
+
+## Forms (action needed)
+- The RSVP, inquiry and volunteer forms still send to Readdy's form service (`readdy.ai/api/form/...`), not to Crowned's inbox. Create a free Web3Forms key with Crowned's email (see the report) so messages arrive.
