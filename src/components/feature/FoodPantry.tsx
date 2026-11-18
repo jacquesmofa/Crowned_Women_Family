@@ -10,7 +10,7 @@ interface Step { title: string; text: string }
 const cld = (url: string, w: number, h: number) => url.replace('/image/upload/', `/image/upload/f_auto,q_auto,c_fill,g_auto,w_${w},h_${h}/`);
 
 /**
- * Food Pantry for funders and partners: the need, how the pantry works, what support makes possible,
+ * Food Pantry for donors: the need, how the pantry works, what donations make possible,
  * what partners receive, real photos and the Executive Director. Sits just above the Food Pantry films.
  */
 export default function FoodPantry() {

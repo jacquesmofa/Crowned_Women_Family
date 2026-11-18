@@ -56,9 +56,9 @@ const en = {
     contactStamp: "07 — Get in touch", contactTitle: "Every woman carries a light.||Help her [[shine]] it.",
   },
   pantry: {
-    stamp: "Food Pantry · For funders & partners",
+    stamp: "Food Pantry · Powered by your donations",
     title: "Every gift becomes||a [[full table]].",
-    lead: "Our Food Pantry is the front door to everything Crowned Women does. A mother who comes in for groceries leaves with food for the week, a warm welcome, and a direct line to counselling, mentorship, newcomer support and our programs for girls. Your support feeds families today and opens the door to lasting change.",
+    lead: "Our Food Pantry is the front door to everything Crowned Women does. A mother who comes in for groceries leaves with food for the week, a warm welcome, and a direct line to counselling, mentorship, newcomer support and our programs for girls. Your donations feed families today and open the door to lasting change.",
     facts: ["Women-led", "Peel Region", "Volunteer-powered", "Culturally responsive", "Dignity first"],
     alt0: "Crowned Women volunteers packing food boxes at the pantry",
     alt1: "Food sorted and ready to share at the Crowned Women pantry",
@@ -67,12 +67,12 @@ const en = {
     alt4: "Volunteers at work during a Food Pantry day",
     howTitle: "How the Food Pantry works",
     steps: [
-      { title: "Source", text: "We gather food through community donations, partner organizations and careful purchasing, with an eye on fresh and culturally familiar foods." },
+      { title: "Source", text: "We gather food through community donations and careful purchasing, with an eye on fresh and culturally familiar foods." },
       { title: "Sort & pack", text: "Trained volunteers check, sort and pack every box so it is safe, balanced and ready on distribution day." },
       { title: "Share with dignity", text: "Families are welcomed by name, not by number. No one leaves feeling judged, and no one leaves empty-handed." },
       { title: "Connect", text: "Every visit is a chance to link women and families to counselling, mentorship, newcomer services and our C-Girls program." }
     ],
-    fundTitle: "What your support makes possible",
+    fundTitle: "What your donations make possible",
     fund: [
       { title: "More food on more tables", text: "Purchasing staples, fresh produce and culturally familiar foods so families get what they actually eat." },
       { title: "Safe storage and transport", text: "Shelving, cold storage and transport that let us accept more donations and reach families who cannot travel." },
@@ -84,17 +84,17 @@ const en = {
     directorAlt: "Marita, Executive Director of Crowned Women and Family Community Services",
     directorText: "Marita leads the Food Pantry and the team behind it. Hear her explain why this work matters, and who it is for.",
     directorCta: "Watch her welcome",
-    receiveTitle: "What funders and partners receive",
+    receiveTitle: "What donors receive",
     receive: [
       "Regular updates on families served and food distributed",
-      "Photo and video documentation of the work you fund",
+      "Photos and videos of the work your donations make possible",
       "Financial reporting and receipts on request",
       "Recognition across our website and community events"
     ],
-    ctaLine: "Partner with us to keep the shelves [[full]], all year round.",
-    ctaFund: "Fund the Food Pantry",
-    ctaPackage: "Request our funding package",
-    packageSubject: "Food Pantry funding package request"
+    ctaLine: "Your donations keep the shelves [[full]], all year round.",
+    ctaFund: "Donate to the Food Pantry",
+    ctaPackage: "Request our donor package",
+    packageSubject: "Food Pantry donor package request"
   },
   films: {
     stamp: "Food Pantry · On film",
