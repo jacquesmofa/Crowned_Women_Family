@@ -1,6 +1,49 @@
 {
   "albums": [
     {
+      "slug": "food-pantry-november-2026",
+      "title": "Food Pantry, November 2026",
+      "title_fr": "Banque alimentaire, novembre 2026",
+      "description": "Fresh produce, groceries and baked goods prepared for families at the Crowned Women Food Pantry.",
+      "description_fr": "Fruits et légumes frais, épicerie et produits de boulangerie préparés pour les familles à la banque alimentaire Crowned Women.",
+      "alt": "Crowned Women Food Pantry, November 2026",
+      "alt_fr": "Banque alimentaire Crowned Women, novembre 2026",
+      "videos": [
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/video/upload/v1795003383/food_pantry_iokmeq.mp4",
+          "title": "Unloading fresh produce",
+          "title_fr": "Déchargement des fruits et légumes frais"
+        }
+      ],
+      "photos": [
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1795003380/WhatsApp_Image_2026-11-17_at_22.56.40_ctcfgk.jpg",
+          "alt": "Stacked food containers ready for families",
+          "alt_fr": "Contenants de nourriture empilés, prêts pour les familles"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1795003380/WhatsApp_Image_2026-11-17_at_22.09.40_3_ttfzii.jpg",
+          "alt": "Boxes of food stacked for distribution",
+          "alt_fr": "Boîtes de nourriture empilées pour la distribution"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1795003380/WhatsApp_Image_2026-11-17_at_22.56.41_pyvor9.jpg",
+          "alt": "Crates of packaged food at the pantry",
+          "alt_fr": "Caisses de denrées emballées à la banque alimentaire"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1795003380/WhatsApp_Image_2026-11-17_at_22.56.42_dgbcpc.jpg",
+          "alt": "Crates of baked goods ready to be shared",
+          "alt_fr": "Caisses de produits de boulangerie prêtes à être partagées"
+        },
+        {
+          "src": "https://res.cloudinary.com/hxhakwbe/image/upload/v1795003380/WhatsApp_Image_2026-11-17_at_23.05.59_paqis3.jpg",
+          "alt": "A crate filled with groceries and snacks for a family",
+          "alt_fr": "Une caisse remplie d’épicerie et de collations pour une famille"
+        }
+      ]
+    },
+    {
       "slug": "food-pantry",
       "title": "Community Food Pantry",
       "title_fr": "Banque alimentaire communautaire",

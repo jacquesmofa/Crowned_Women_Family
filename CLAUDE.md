@@ -43,3 +43,6 @@ Women-led, culturally responsive non-profit in the Peel Region (women, families,
 - Food Pantry video reel (10 Nov, commit 7b20ec8): 4 Mux videos, Playback IDs in `src/content/videos.json` (never Asset IDs); component `src/components/feature/VideoReel.tsx`; EN/FR text under `films.*` in i18n.
 - Team names/photos and most images are still Readdy placeholders.
 - Design overlap with other clients: Same font stack (Futura/Jost + JetBrains Mono) as ACCAH and NNAYA: all three came from the same Readdy template. Must diverge.
+
+## Gallery videos (18 Nov 2026)
+- An album in `src/content/gallery.json` can have `videos: [{ src, title, title_fr? }]`: short clips stored on Cloudinary (the .mp4 address). They play above the photos with a cover picture taken from the clip and load only when pressed. Photos can carry `alt` and `alt_fr`. `SiteGallery.tsx` is shared with NNAYA: keep both copies identical.
