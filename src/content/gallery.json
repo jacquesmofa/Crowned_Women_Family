@@ -1,13 +1,13 @@
 {
   "albums": [
     {
-      "slug": "food-pantry-november-2026",
-      "title": "Food Pantry, November 2026",
-      "title_fr": "Banque alimentaire, novembre 2026",
+      "slug": "hampers-and-fresh-produce",
+      "title": "Hampers & Fresh Produce",
+      "title_fr": "Paniers et produits frais",
       "description": "Fresh produce, groceries and baked goods prepared for families at the Crowned Women Food Pantry.",
       "description_fr": "Fruits et légumes frais, épicerie et produits de boulangerie préparés pour les familles à la banque alimentaire Crowned Women.",
-      "alt": "Crowned Women Food Pantry, November 2026",
-      "alt_fr": "Banque alimentaire Crowned Women, novembre 2026",
+      "alt": "Crowned Women Food Pantry, hampers and fresh produce",
+      "alt_fr": "Banque alimentaire Crowned Women, paniers et produits frais",
       "videos": [
         {
           "src": "https://res.cloudinary.com/hxhakwbe/video/upload/v1795003383/food_pantry_iokmeq.mp4",

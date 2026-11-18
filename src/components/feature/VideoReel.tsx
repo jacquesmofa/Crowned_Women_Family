@@ -111,7 +111,6 @@ export default function VideoReel({ id = 'food-pantry' }: { id?: string }) {
             name: item.title[lang],
             description: item.blurb[lang],
             thumbnailUrl: [thumb(item, 1280).replace('.webp', '.jpg')],
-            uploadDate: '2026-11-10',
             duration: isoDuration(item.duration),
             contentUrl: `https://stream.mux.com/${item.playbackId}.m3u8`,
             embedUrl: `https://player.mux.com/${item.playbackId}`,
